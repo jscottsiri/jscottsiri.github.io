@@ -382,6 +382,7 @@ button {
   }
   .card .long-tile {
     box-sizing: border-box;
+    max-width: 94%;
   }
   p{
     margin: 0.2rem;
@@ -441,6 +442,8 @@ button {
 
   .card{
     height: 90%;
+    padding-left:1rem;
+    padding-right: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
