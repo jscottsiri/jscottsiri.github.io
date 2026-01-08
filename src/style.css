@@ -141,7 +141,8 @@ h1 {
 
 .content-section{
   margin: 1rem auto;
-  width: 90%;
+  width: 98%;
+  max-width: 450px;
   display: flex;
   flex-direction: row;
 }
@@ -225,6 +226,7 @@ hr.content-section{
   box-sizing: border-box;
   transition: 0.3s;
 }
+
 
 .card:hover {
   outline: 4px solid var(--secondary-color);
@@ -319,6 +321,7 @@ button {
     display: flex;
     flex-direction: row;
     width: 95%;
+    max-width: 100%;
     justify-content: center;
   }
   .content-section-header{

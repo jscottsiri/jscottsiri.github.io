@@ -122,7 +122,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                             <div>
                                 <p class="maintext">Chief Technology Officer/Lead Developer</p>
                                 <p class="subtext">SportsMainFrame, LLC</p>
-                                <p class="subtext">Aug. 2024  -  Current</p>
+                                <p class="subtext">Aug. 2024  -  Jan. 2026</p>
                             </div>
                         </div>
                         <div id="TNO" class="long-tile no-copy">
