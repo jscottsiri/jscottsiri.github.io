@@ -39,7 +39,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                         <div class="content-subsection">
                             <div id="personal-split" class="content-section-split big-unsplit">
                                 <div class="image-container">
-                                    <img draggable="false" id="profile-pic" src="/src/ScottatHorseland.jpg" alt="Scott Siri, at the Assateague State Park (no horses)">
+                                    <img draggable="false" id="profile-pic" src="/assets/images/ScottatHorseland.jpg" alt="Scott Siri, at the Assateague State Park (no horses)">
                                     <p class="subtext">Scott at Assateague</p>
                                 </div>
                                 <div>
@@ -84,7 +84,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                     <div class="content-subsection">
                         <div id="UU" class="long-tile no-copy">
                             <div class="image-container">
-                                <img alt="Utrecht University Logo" src="/src/UtrechtUniversity.jpg" draggable="false">
+                                <img alt="Utrecht University Logo" src="/assets/images/UtrechtUniversity.jpg" draggable="false">
                             </div>
                             <div>
                                 <p class="maintext">Human Computer Interaction MSc</p>
@@ -94,7 +94,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                         </div>                        
                         <div id="NJIT" class="long-tile no-copy">
                             <div class="image-container">
-                                <img alt="NJIT Logo" src="/src/NJIT.jpg" draggable="false">
+                                <img alt="NJIT Logo" src="/assets/images/NJIT.jpg" draggable="false">
                             </div>
                             <div>
                                 <p class="maintext">Human Computer Interaction BS</p>
@@ -117,7 +117,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                     <div class="content-subsection">
                         <div id="SMF" class="long-tile no-copy">
                             <div class="image-container">
-                                <img alt="SportsMainFrame Logo" src="/src/SportsMainFrame.jpg" draggable="false">
+                                <img alt="SportsMainFrame Logo" src="/assets/images/SportsMainFrame.jpg" draggable="false">
                             </div>
                             <div>
                                 <p class="maintext">Chief Technology Officer/Lead Developer</p>
@@ -127,7 +127,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                         </div>
                         <div id="TNO" class="long-tile no-copy">
                             <div class="image-container">
-                                <img alt="TNO Logo" src="/src/TNO.jpg" draggable="false">
+                                <img alt="TNO Logo" src="/assets/images/TNO.jpg" draggable="false">
                             </div>
                             <div>
                                 <p class="maintext">Research Developer (Thesis Contractor)</p>
@@ -137,7 +137,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                         </div>
                         <div id="GP" class="long-tile no-copy">
                             <div class="image-container">
-                                <img alt="GraphPolaris Logo" src="/src/GraphPolaris.jpg" draggable="false">
+                                <img alt="GraphPolaris Logo" src="/assets/images/GraphPolaris.jpg" draggable="false">
                             </div>
                             <div>
                                 <p class="maintext">UX Engineer (Contractor)</p>
@@ -147,7 +147,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                         </div>
                         <div id="ADP" class="long-tile no-copy">
                             <div class="image-container">
-                                <img alt="ADP Logo" src="/src/ADP.jpg" draggable="false">
+                                <img alt="ADP Logo" src="/assets/images/ADP.jpg" draggable="false">
                             </div>
                             <div>
                                 <p class="maintext">Application Developer</p>
@@ -169,7 +169,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <div class="project-summary project-section" id="project-summary">
                     <div id="project-img">
                         <div class="image-container">
-                            <img alt="Utrecht University Logo" height="160px" src="/src/UtrechtUniversity.jpg" draggable="false">
+                            <img alt="Utrecht University Logo" height="160px" src="/assets/images/UtrechtUniversity.jpg" draggable="false">
                         </div>
                     </div>
                     <div id="project-details">
@@ -220,7 +220,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <div class="project-summary project-section" id="project-summary">
                     <div id="project-img">
                         <div class="image-container">
-                            <img alt="NJIT Logo" height="160px" src="/src/NJIT.jpg" draggable="false">
+                            <img alt="NJIT Logo" height="160px" src="/assets/images/NJIT.jpg" draggable="false">
                         </div>
                     </div>
                     <div id="project-details">
