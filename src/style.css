@@ -1,11 +1,13 @@
 @font-face {
   font-family: "Oxanium";
-  src: url("src/assets/fonts/Oxanium.ttf") format("truetype");
+  src: url("/assets/fonts/Oxanium.ttf") format("truetype"),
+       url("/src/assets/fonts/Oxanium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Changa";
-  src: url("src/assets/fonts/Changa.ttf") format("truetype");
+  src: url("/assets/fonts/Changa.ttf") format("truetype"),
+       url("/src/assets/fonts/Changa.ttf") format("truetype");
 }
 :root {
 
