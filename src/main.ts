@@ -4,7 +4,7 @@ import {ToggleLongTiles} from "./select_toggle.ts";
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div >
     <header class="site-header">
-        <div id="logo">
+        <div id="logo" class="pointer-cursor">
             <span id="logo-span">
                     J Scott Siri
             </span>
@@ -13,11 +13,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </div>
         <div id="nav-section">
             <div id="social-links">
-                <a title="Email" href="mailto:contact@jscottsiri.com">
+                <a class="pointer-cursor" title="Email" href="mailto:contact@jscottsiri.com">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/>
                 </a>
                 </svg>
-                <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/john-siri-jr-b7a581171">
+                <a class="pointer-cursor" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/john-siri-jr-b7a581171">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
                     </svg>
                 </a>
@@ -82,7 +82,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <hr class="content-section-divider">
                 <div class="content-section-body">
                     <div class="content-subsection">
-                        <div id="UU" class="long-tile no-copy">
+                        <div id="UU" class="long-tile no-copy pointer-cursor">
                             <div class="image-container">
                                 <img alt="Utrecht University Logo" src="/assets/images/UtrechtUniversity.jpg" draggable="false">
                             </div>
@@ -92,7 +92,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <p class="subtext">Sept. 2022  -  June 2024</p>
                             </div>
                         </div>                        
-                        <div id="NJIT" class="long-tile no-copy">
+                        <div id="NJIT" class="long-tile no-copy pointer-cursor">
                             <div class="image-container">
                                 <img alt="NJIT Logo" src="/assets/images/NJIT.jpg" draggable="false">
                             </div>
@@ -115,7 +115,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <hr class="content-section-divider">
                 <div class="content-section-body">
                     <div class="content-subsection">
-                        <div id="SMF" class="long-tile no-copy">
+                        <div id="SMF" class="long-tile no-copy pointer-cursor">
                             <div class="image-container">
                                 <img alt="SportsMainFrame Logo" src="/assets/images/SportsMainFrame.jpg" draggable="false">
                             </div>
@@ -125,7 +125,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <p class="subtext">Aug. 2024  -  Jan. 2026</p>
                             </div>
                         </div>
-                        <div id="TNO" class="long-tile no-copy">
+                        <div id="TNO" class="long-tile no-copy pointer-cursor">
                             <div class="image-container">
                                 <img alt="TNO Logo" src="/assets/images/TNO.jpg" draggable="false">
                             </div>
@@ -135,7 +135,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <p class="subtext">Oct. 2023  -  June 2024</p>
                             </div>
                         </div>
-                        <div id="GP" class="long-tile no-copy">
+                        <div id="GP" class="long-tile no-copy pointer-cursor">
                             <div class="image-container">
                                 <img alt="GraphPolaris Logo" src="/assets/images/GraphPolaris.jpg" draggable="false">
                             </div>
@@ -145,7 +145,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <p class="subtext">May 2023  -  Oct. 2023</p>
                             </div>
                         </div>
-                        <div id="ADP" class="long-tile no-copy">
+                        <div id="ADP" class="long-tile no-copy pointer-cursor">
                             <div class="image-container">
                                 <img alt="ADP Logo" src="/assets/images/ADP.jpg" draggable="false">
                             </div>
@@ -162,7 +162,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <section id="project-UU" class="project fade-in-element hidden" >
             <div id="project-header">
                 <div>
-                    <svg class="icon reset" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 256a208 208 0 1 1 416 0 208 208 0 1 1 -416 0zm464 0a256 256 0 1 0 -512 0 256 256 0 1 0 512 0zM124.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l104 104c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-72 104 0c13.3 0 24-10.7 24-24l0-16c0-13.3-10.7-24-24-24l-104 0 0-72c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-104 104z"/></svg>
+                    <svg class="icon reset pointer-cursor" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 256a208 208 0 1 1 416 0 208 208 0 1 1 -416 0zm464 0a256 256 0 1 0 -512 0 256 256 0 1 0 512 0zM124.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l104 104c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-72 104 0c13.3 0 24-10.7 24-24l0-16c0-13.3-10.7-24-24-24l-104 0 0-72c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-104 104z"/></svg>
                 </div>
             </div>
             <div class="project-content card" >
@@ -213,7 +213,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <section id="project-NJIT" class="project fade-in-element hidden" >
             <div id="project-header">
                 <div>
-                    <svg class="icon reset" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 256a208 208 0 1 1 416 0 208 208 0 1 1 -416 0zm464 0a256 256 0 1 0 -512 0 256 256 0 1 0 512 0zM124.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l104 104c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-72 104 0c13.3 0 24-10.7 24-24l0-16c0-13.3-10.7-24-24-24l-104 0 0-72c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-104 104z"/></svg>
+                    <svg class="icon reset pointer-cursor" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 256a208 208 0 1 1 416 0 208 208 0 1 1 -416 0zm464 0a256 256 0 1 0 -512 0 256 256 0 1 0 512 0zM124.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l104 104c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-72 104 0c13.3 0 24-10.7 24-24l0-16c0-13.3-10.7-24-24-24l-104 0 0-72c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-104 104z"/></svg>
                 </div>
             </div>
             <div class="project-content card" >
@@ -260,7 +260,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 </div>
             </div>
         </section>
+    <footer>
     
+    </footer>
   </div>
 `
 
