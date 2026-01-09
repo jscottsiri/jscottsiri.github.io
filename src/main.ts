@@ -260,6 +260,217 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 </div>
             </div>
         </section>
+        <section id="project-ADP" class="project fade-in-element hidden" >
+            <div id="project-header">
+                <div>
+                    <svg class="icon reset pointer-cursor" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 256a208 208 0 1 1 416 0 208 208 0 1 1 -416 0zm464 0a256 256 0 1 0 -512 0 256 256 0 1 0 512 0zM124.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l104 104c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-72 104 0c13.3 0 24-10.7 24-24l0-16c0-13.3-10.7-24-24-24l-104 0 0-72c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-104 104z"/></svg>
+                </div>
+            </div>
+            <div class="project-content card" >
+                <div class="project-summary project-section" id="project-summary">
+                    <div id="project-img">
+                        <div class="image-container">
+                            <img alt="ADP Logo" height="160px" src="/assets/images/ADP.jpg" draggable="false">
+                        </div>
+                    </div>
+                    <div id="project-details">
+                        <h3>Application Developer</h3>
+                        <p>Automatic Data Processing (ADP)</p>
+                        <p><span>Aug. 2020</span> - <span>Aug. 2022</span></p>
+                    </div>
+                 
+                </div>
+                <div class="project-body" id="project-body">
+                    <section class="project-section with-aside">
+                        <div>
+                            <h4>Tech Stack</h4>
+                            <ul class="tech-icon-list">
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/HTML5.svg" width="48" height="48" class="tech-icon" /> <div class="tooltip-body">HTML5</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/CSS3.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">CSS3</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Python.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Python</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Java.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Java</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Jest.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Jest</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Azure%20SQL%20Database.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">SQL</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Git.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Git</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/BitBucket.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">BitBucket</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Jira.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Jira</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Docker.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Docker</div></li>
+                            </ul> 
+                        </div>
+                        <div>
+                        <h3>Overview</h3>
+                            <p>
+                                In my Senior year at NJIT, I completed an internship with ADP and was offered a full-time position as as software engineer. I accepted and began work in August of 2020. I spent some time in training before being moved to Lifion (now ADP Lyric HCM).
+                            </p>
+                            <p>
+                                During my day-to-day, I worked in full-stack development. At ADP, I worked in Aviato- a high impact AGILE team centered on Payroll. I designed and developed interfaces, took part in code review, and created unit tests to test code changes.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section id="project-TNO" class="project fade-in-element hidden" >
+            <div id="project-header">
+                <div>
+                    <svg class="icon reset pointer-cursor" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 256a208 208 0 1 1 416 0 208 208 0 1 1 -416 0zm464 0a256 256 0 1 0 -512 0 256 256 0 1 0 512 0zM124.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l104 104c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-72 104 0c13.3 0 24-10.7 24-24l0-16c0-13.3-10.7-24-24-24l-104 0 0-72c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-104 104z"/></svg>
+                </div>
+            </div>
+            <div class="project-content card" >
+                <div class="project-summary project-section" id="project-summary">
+                    <div id="project-img">
+                        <div class="image-container">
+                            <img alt="TNO Logo" height="160px" src="/assets/images/TNO.jpg" draggable="false">
+                        </div>
+                    </div>
+                    <div id="project-details">
+                        <h3>Research Developer (Thesis)</h3>
+                        <p>The Netherlands Organisation for Applied Scientific Research (TNO)</p>
+                        <p><span>Nov. 2023</span> - <span>Jun. 2024</span></p>
+                    </div>
+                 
+                </div>
+                <div class="project-body" id="project-body">
+                    <section class="project-section with-aside">
+                        <div>
+                            <h4>Tech Stack</h4>
+                            <ul class="tech-icon-list">
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/CSharp.svg" width="48" height="48" class="tech-icon" /> <div class="tooltip-body">C#</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/NET.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">.NET</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Unity.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Unity3D</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/HTML5.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">HTML5</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/CSS3.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">CSS3</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/JavaScript.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">JavaScript</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/TypeScript.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">TypeScript</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Vue.js.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Vue.js</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Python.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Python</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/NumPy.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">NumPy</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Pandas.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Pandas</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Git.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Git</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/GitLab.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">GitLab</div></li>
+                            </ul> 
+                        </div>
+                        <div>
+                        <h3>Overview</h3>
+                            <p>
+                                While studying at Utrecht University, I worked for a data-visualization startup as a UX Engineer. From the end of classes until my thesis, I build out dashboards using React TypeScript, Redux, Tailwind CSS, and MUI.
+                            </p>
+                            <p>
+                                I wore many hats as part of the startup team. I worked on an AGILE team with developers and data analysts to visualize graph node data stored remotely. I designed features with Figma and performed usability tests with the mock-ups, iterating on them and implementing them.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+               <section id="project-GP" class="project fade-in-element hidden" >
+            <div id="project-header">
+                <div>
+                    <svg class="icon reset pointer-cursor" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 256a208 208 0 1 1 416 0 208 208 0 1 1 -416 0zm464 0a256 256 0 1 0 -512 0 256 256 0 1 0 512 0zM124.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l104 104c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-72 104 0c13.3 0 24-10.7 24-24l0-16c0-13.3-10.7-24-24-24l-104 0 0-72c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-104 104z"/></svg>
+                </div>
+            </div>
+            <div class="project-content card" >
+                <div class="project-summary project-section" id="project-summary">
+                    <div id="project-img">
+                        <div class="image-container">
+                            <img alt="GraphPolaris Logo" height="160px" src="/assets/images/GraphPolaris.jpg" draggable="false">
+                        </div>
+                    </div>
+                    <div id="project-details">
+                        <h3>UX Engineer (Contractor)</h3>
+                        <p>GraphPolaris</p>
+                        <p><span>May 2023</span> - <span>Oct. 2023</span></p>
+                    </div>
+                 
+                </div>
+                <div class="project-body" id="project-body">
+                    <section class="project-section with-aside">
+                        <div>
+                            <h4>Tech Stack</h4>
+                            <ul class="tech-icon-list">
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/HTML5.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">HTML5</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/CSS3.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">CSS3</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/JavaScript.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">JavaScript</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/TypeScript.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">TypeScript</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/React.svg" width="48" height="48" class="tech-icon" /> <div class="tooltip-body">React</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Redux.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Redux</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Tailwind%20CSS.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Tailwind CSS</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Material%20UI.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Material UI</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Figma.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Figma</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Azure%20SQL%20Database.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">SQL</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Git.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Git</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/GitLab.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">GitLab</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Docker.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Docker</div></li>
+                            </ul> 
+                        </div>
+                        <div>
+                        <h3>Overview</h3>
+                            <p>
+                                While studying at Utrecht University, I worked for a data-visualization startup as a UX Engineer. From the end of classes until my thesis, I build out dashboards using React TypeScript, Redux, Tailwind CSS, and MUI.
+                            </p>
+                            <p>
+                                I wore many hats as part of the startup team. I worked on an AGILE team with developers and data analysts to visualize graph node data stored remotely. I designed features with Figma and performed usability tests with the mock-ups, iterating on them and implementing them.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section id="project-SMF" class="project fade-in-element hidden" >
+            <div id="project-header">
+                <div>
+                    <svg class="icon reset pointer-cursor" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M48 256a208 208 0 1 1 416 0 208 208 0 1 1 -416 0zm464 0a256 256 0 1 0 -512 0 256 256 0 1 0 512 0zM124.7 244.7c-6.2 6.2-6.2 16.4 0 22.6l104 104c4.6 4.6 11.5 5.9 17.4 3.5s9.9-8.3 9.9-14.8l0-72 104 0c13.3 0 24-10.7 24-24l0-16c0-13.3-10.7-24-24-24l-104 0 0-72c0-6.5-3.9-12.3-9.9-14.8s-12.9-1.1-17.4 3.5l-104 104z"/></svg>
+                </div>
+            </div>
+            <div class="project-content card" >
+                <div class="project-summary project-section" id="project-summary">
+                    <div id="project-img">
+                        <div class="image-container">
+                            <img alt="SMF Logo" height="160px" src="/assets/images/SportsMainFrame.jpg" draggable="false">
+                        </div>
+                    </div>
+                    <div id="project-details">
+                        <h3>Chief Technology Officer/Lead Developer</h3>
+                        <p>SportsMainFrame, LLC</p>
+                        <p><span>Aug. 2024</span> - <span>Jan. 2026</span></p>
+                    </div>
+                 
+                </div>
+                <div class="project-body" id="project-body">
+                    <section class="project-section with-aside">
+                        <div>
+                            <h4>Tech Stack</h4>
+                            <ul class="tech-icon-list">
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/HTML5.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">HTML5</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/CSS3.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">CSS3</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/JavaScript.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">JavaScript</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/TypeScript.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">TypeScript</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/React.svg" width="48" height="48" class="tech-icon" /> <div class="tooltip-body">React</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Tailwind%20CSS.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Tailwind CSS</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Figma.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Figma</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Node.js.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Node.js</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Express.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Express</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Azure%20SQL%20Database.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">SQL</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Microsoft%20SQL%20Server.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Microsoft SQL Server</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Azure.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Azure Cloud Services</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Git.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Git</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/GitHub.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">GitHub</div></li>
+                                <li class="tech-icon-container tooltip-container"> <img src="/assets/icons/TechStack/Docker.svg" width="48" height="48" class="tech-icon" /><div class="tooltip-body">Docker</div></li>
+                            </ul> 
+                        </div>
+                        <div>
+                        <h3>Overview</h3>
+                            <p>
+                                While studying at Utrecht University, I worked for a data-visualization startup as a UX Engineer. From the end of classes until my thesis, I build out dashboards using React TypeScript, Redux, Tailwind CSS, and MUI.
+                            </p>
+                            <p>
+                                I wore many hats as part of the startup team. I worked on an AGILE team with developers and data analysts to visualize graph node data stored remotely. I designed features with Figma and performed usability tests with the mock-ups, iterating on them and implementing them.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
     <footer>
     
     </footer>
