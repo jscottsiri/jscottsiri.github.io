@@ -225,7 +225,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                     </div>
                     <div id="project-details">
                         <h3>Human-Computer Interaction, BS</h3>
-                        <p>New Jersey Institute of Technology & Rutgers Univeristy (Joint Program)</p>
+                        <p>New Jersey Institute of Technology & Rutgers University (Joint Program)</p>
                         <p><span>Sep. 2016</span> - <span>May 2020</span></p>
                     </div>
                  

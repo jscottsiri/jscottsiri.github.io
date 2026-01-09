@@ -258,6 +258,7 @@ hr.content-section{
   box-sizing: border-box;
   transition: 0.3s;
   background-color: var(--primary-color);
+  box-shadow: var(--secondary-color-opaque) 10px 10px 2px;
 }
 
 
@@ -265,7 +266,7 @@ hr.content-section{
   outline: 4px solid var(--secondary-color);
   /*transform: scale(1.01);*/
   transition: 0.3s;
-  box-shadow: var(--secondary-color) 0 0 0.65rem;
+  box-shadow: var(--secondary-color) 0 0 1rem;
 }
 
 .site-header {
@@ -301,7 +302,9 @@ hr.content-section{
   margin: 1rem auto;
 
 }
-
+div.long-tile{
+  box-shadow: var(--secondary-color) 2px 2px 4px;
+}
 div.long-tile:hover{
   box-shadow: var(--secondary-color) 0 0 0.65rem;
   scale: 1.02;
