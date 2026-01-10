@@ -82,7 +82,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <hr class="content-section-divider">
                 <div class="content-section-body">
                     <div class="content-subsection">
-                        <div id="UU" class="long-tile no-copy pointer-cursor">
+                        <div id="UU" class="long-tile no-copy pointer-cursor foldup">
                             <div class="image-container">
                                 <img alt="Utrecht University Logo" src="/assets/images/UtrechtUniversity.jpg" draggable="false">
                             </div>
@@ -353,10 +353,52 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                         <div>
                         <h3>Overview</h3>
                             <p>
-                                While studying at Utrecht University, I worked for a data-visualization startup as a UX Engineer. From the end of classes until my thesis, I build out dashboards using React TypeScript, Redux, Tailwind CSS, and MUI.
+                                While doing my Thesis at Utrecht University, I managed to get an industry position with TNO's Human-Machine Teaming department. They were working on prototyping 3D workspaces with virtual reality so they could simulate efficiency before dedicating resources to construction.
+                            <p>
+                                During my thesis, I helped TNO identify how avatar fidelity impacted the perceptions of the environment. I worked with a high degree of autonomy, with periodic check-ins from my supervisors. In this project, I had to work on both development and research phases, both building out and running tests with the virtual world.                            </p>
+                            </p>
+                        </div>
+                    </section>
+                    <section class="project-section">
+                        <div>
+                        <h3>Development</h3>
+                            <p>
+                                During the development phase, I worked with C# to build out situations in Unity3D and cast them to HTC XR Elite headsets. I needed to build out network coordination between small groups of people in a shared space, so I needed effective synergy with reality and the virtual reality. This was true for both the simple abstract avatars and the complex, humanoid avatars. Additionally, I needed to be able to manage the virtual world from outside, so I worked with a Vue.js interface to manage the environment in the virtual simulations.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="project-section">
+                        <div>
+                        <h3>Research</h3>
+                            <p>
+                                For research, I tested groups of people's observations in virtual kitchens. Kitchens were workspaces that everyone was familiar with, so they made for good work-test environments. During the study, the users (in groups of two and three) would go through a series of virtual environments and then fill out surveys based on their observations. The users would do a set of rooms with a selected low-fidelity avatar and a set of rooms with a selected high-fidelity avatars. Additionally, notes were taken on observations made. 
                             </p>
                             <p>
-                                I wore many hats as part of the startup team. I worked on an AGILE team with developers and data analysts to visualize graph node data stored remotely. I designed features with Figma and performed usability tests with the mock-ups, iterating on them and implementing them.
+                                Following the VR sessions, users were given a short, semi-structured interview that gave the opportunity to ask questions and clarify observations. This was then followed by a debriefing.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="project-section">
+                        <div>
+                        <h3>Quantitative Analysis</h3>
+                            <p>
+                                After the study, data collected was broken down and analyzed. Numerical data was analyzed through t-tests using the Python libraries NumPy and Pandas. While there was minimal difference with their initial paired t-tests, exploratory analyses with independent t-tests for each room set suggested that the initial avatar fidelity, rather than current avatar fidelity, led to significant differences in team dynamics and behaviors.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="project-section">
+                        <div>
+                        <h3>Qualitative Analysis</h3>
+                            <p>
+                                The qualitative data was coded and quantified. The resulting analysis found that users displayed different interaction habits based on the avatars they were using. Higher fidelity avatars let to more attempts to interact with their environment, even when they had not encountered prior interactivity. Additionally, users using avatars with higher fidelity focused more on visual stylization of the virtual environment.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="project-section">
+                        <div>
+                        <h3>Results</h3>
+                            <p>
+                                The results of the study suggest that avatar fidelity can prime a user to interpret their environment differently. Avatar fidelity influenced perceptions of interactivity and stylization in the virtual environment. Initial avatar fidelity may set a baseline for observations of prototyped spaces and team dynamics. These factors imply that avatar fidelity may impact the focus brainstorming and evaluation of 3D workspace prototypes. The insights from the study helped inform design guidelines for virtual reality prototyping at TNO.
                             </p>
                         </div>
                     </section>
@@ -461,10 +503,87 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                         <div>
                         <h3>Overview</h3>
                             <p>
-                                While studying at Utrecht University, I worked for a data-visualization startup as a UX Engineer. From the end of classes until my thesis, I build out dashboards using React TypeScript, Redux, Tailwind CSS, and MUI.
+                                The mission was simple: sell a league in a box.
+                            </p>
+                            <br>
+                            <p>
+                               SportsMainFrame was looking to build a recreational sports management platform, combining rostering, scheduling, payments, and messaging into a single platform.
+                               With volunteerism at a low, the platform could reduce the load put in place by manual or less comprehensive options.                             
+                            </p>
+                            <br>
+                            <p>
+                                Over the course of a year and a half, I build out a comprehensive, 0-1 web application. I handled day-to-day design, development, DevOps, and more as the technical lead.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="project-section">
+                        <div>
+                        <h3>Wearing Many Hats</h3>
+                            <p>
+                                Like at any startup, I wore many hats. On any given day, my responsibilities included the following:
                             </p>
                             <p>
-                                I wore many hats as part of the startup team. I worked on an AGILE team with developers and data analysts to visualize graph node data stored remotely. I designed features with Figma and performed usability tests with the mock-ups, iterating on them and implementing them.
+                                <ul>
+                                    <li>Leading 0-1 full-stack software development, using technologies like React, Tailwind CSS, and Node.js.</li>
+                                    <li>Wireframing with Figma and testing interfaces with usability tests, like speak aloud exercises.</li>
+                                    <li>Maintaining DevOps processes and Cloud Services, including the Azure Communication Services, Azure SQL Service, Azure Redis, and more.</li>
+                                    <li>Managing a small team of contractors to hit project milestones and build out features.</li>
+                                    <li>Keeping up to date with technology trends, especially as AI took a larger part of the market share.</li>
+                                    <li>Interacting with prospective and current customers, gathering requirements and pain points and working with them to meet solutions.</li>
+                                    <li>Working with 3rd party business partners, including payment processors and cybersecurity services.</li>
+                                </ul>    
+                            </p>
+                        </div>
+                    </section>
+                    <section class="project-section">
+                        <div>
+                        <h3>The Tipping Point</h3>
+                            <p>
+                                SportsMainFrame successfully launched and, at its peak, was integrated into recreational sports in 25+ NJ towns. However, year-long costs and billing cycles led to a perpetual cash-flow issue.
+                            </p>
+                            <br>
+                            <p>
+                                The startup was built lean, so there was not a lot of wiggle room and the team was constantly small. We had initial investors and this got us through the first year. We had tried to seek out additional funding, but our options were limited. Despite the initial sales and pitching with several investors, we did not get supplementary funding. 
+                            </p>
+                            <br>
+                            <p>
+                                The payments cycle for recreational sports were another issue- Recreation Departments and platforms tend to run funding cycles at the end of a given year. During the year, runway was used up while aiming for new clients when existing contracts expired. Some of the sales were made with discounts, to try and build a user base, but this reduced funding.
+                            </p>
+                            <br>
+                            <p>
+                                Our sales department, which was small, had trouble with customer acquisition. Many recreational leagues are run by volunteer representatives and the main sales season was from Thanksgiving through Christmas. When work demands increased during this time, we saw some team members leave.
+                            </p>
+                            <br>
+                            <p>
+                                When we were unable to close with the clients we had been courting, we made the decision to close shop- there was not funding to last through another year.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="project-section">
+                        <div>
+                        <h3>Takeaways</h3>
+                            <p>
+                                SportsMainFrame was extremely fun to build, but financial factors ultimately led to the end of the company. While it's never fun to have something you poured your time and effort into not work out, there were some big takeaways from the experience.
+                            </p>
+                            <br>
+                            <p>
+                                <h4>1.</h4>
+                                I got a phenomenal amount of experience with team and product management.
+                            </p>
+                            <br>
+                            <p>
+                                <h4>2.</h4>
+                                With very limited resources, I was able to apply my skills to bring a product from ideation to launch, then build it out further. I built a comprehensive, drag and drop, web application for admins and a responsive, concise application for general users.
+                            </p>
+                            <br>
+                            <p>
+                                <h4>3.</h4>
+                                I was able to coordinate and manage a team that built out features, successfully adding all core modules we sought to develop. As far as the technology side was concerned, the product was successfully built out past MVP.
+                            </p>
+                            <br>
+                            <p>
+                                <h4>4.</h4>
+                                I learned that projects can fail due to issues outside of development. I had believed that a well-built product could make up for shortages elsewhere, but found that the development is a key part of a bigger process that needs to be secure. 
                             </p>
                         </div>
                     </section>

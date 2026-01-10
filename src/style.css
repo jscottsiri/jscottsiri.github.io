@@ -542,7 +542,6 @@ button {
     /*max-width: 320px;*/
     width: 80%;
   }
-
 }
 
 .selected {
@@ -612,7 +611,7 @@ button {
   margin: 2rem auto !important;
   overflow-y: scroll;
 }
-.project-section p {
+.project-section p{
   padding: 0 1rem;
 }
 #project-header{
@@ -646,9 +645,16 @@ button {
 .project-section{
   border-bottom: 1px solid var(--secondary-color);
   padding: 1rem 0 2rem 0;
-
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
-
+.project-section :not(.with-aside *){
+  max-width: 60vw;
+}
+.project-section .project-summary{
+  max-width: 100vw;
+}
 .tooltip-container{
   position: relative;
   display: inline-block;
@@ -691,7 +697,6 @@ button {
   flex-direction: column;
   justify-content: center;
 }
-
 
 
 .no-copy {
