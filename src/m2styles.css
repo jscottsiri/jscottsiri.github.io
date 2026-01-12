@@ -1,0 +1,388 @@
+@font-face {
+  font-family: "Oxanium";
+  src: url("/assets/fonts/Oxanium.ttf") format("truetype"),
+  url("/src/assets/fonts/Oxanium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Changa";
+  src: url("/assets/fonts/Changa.ttf") format("truetype"),
+  url("/src/assets/fonts/Changa.ttf") format("truetype");
+}
+
+:root {
+
+  --primary-color: #110D1D;
+  --primary-color-opaque: #110D1De0;
+  --secondary-color: #E2E2E2;
+  --secondary-color-opaque: #E2E2E2a0;
+  --accent-color-1: #EE00FF;
+  --accent-color-2: #00FFFF;
+  --accent-color-1-opaque: #EE00FFa0;
+  --accent-color-2-opaque: #00FFFFa0;
+  --background-color: #1e1e1e;
+  --background-color-opaque: #1e1e1ea0;
+
+
+
+  /*font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;*/
+  font-family: Changa, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 20px;
+
+
+  color-scheme: light dark;
+  color: var(--font-color);
+  /*background-image: linear-gradient(90deg, var(--accent-color-1), var(--accent-color-2));*/
+
+  background-color: var(--primary-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.site-header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: 100vw;
+  box-sizing: border-box;
+  position: sticky;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  top: 0;
+  left: 0;
+  padding: 0 10px;
+  z-index: 10;
+  min-height: 8vh;
+}
+body{
+  margin: 0;
+
+}
+button{
+  cursor: pointer;
+}
+#logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: Oxanium, sans-serif;
+  text-indent: 1rem;
+  color: var(--secondary-color);
+  transition: 0.5s font-weight;
+}
+
+#logo:hover{
+  background-image: linear-gradient(0deg, var(--accent-color-1), var(--accent-color-2));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tooltip-container{
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-body{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.25s;
+  text-align: center;
+  position: absolute;
+  bottom: -85%;
+  z-index: 10;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--secondary-color);
+  padding: 0.5rem;
+  border-radius: 10%;
+  transform: translateX(-20%);
+  width: 100%;
+  font-size: medium;
+  flex-wrap: wrap;
+}
+
+.a-button{
+  text-decoration: none;
+}
+.a-button:visited{
+  color: inherit;
+}
+
+#mobile-menu{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  width: 100%;
+}
+#mobile-menu button{
+  height: 2rem;
+  width: 2rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#splash{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  width: 100%;
+  margin: 0;
+}
+#splash-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 0;
+  margin: 3rem 0 0;
+}
+
+.tron-background{
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, var(--accent-color-2-opaque) 2px, transparent 1px),
+  linear-gradient(to bottom, var(--accent-color-1-opaque) 2px, transparent 1px);
+  background-color: var(--primary-color);
+  animation: cycleBG 10s linear infinite;
+}
+
+@keyframes cycleBG {
+  from {
+    background-position: 0 0;
+  }
+  to{
+    background-position: -280px -280px;
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: scaleX(-1) translateX(100%);
+    opacity: 0;
+    z-index: -10;
+  }
+  to {
+
+    transform: scaleX(-1) translateX(0);
+    opacity: 1;
+    z-index: 10;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#splash-outline{
+  background-color: var(--secondary-color);
+  mask-image: url("/src/assets/images/HCScott.png");
+  -webkit-mask-image: url("/src/assets/images/ScottOutlineWhite.png");
+
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+
+  width: 360px;
+  height: 360px;
+
+  animation: slideFromLeft 0.8s linear;
+  transition: 0.3s all ease;
+
+}
+#splash-content{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+  width: 80%;
+  text-align: center;
+  color: var(--secondary-color);
+  justify-content: center;
+}
+
+.grid-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.grid-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+#splash button{
+  padding: 2rem;
+  font-size: 24px;
+  font-family: Changa, sans-serif;
+  animation: fadeDown 0.3s linear;
+  transition: 0.3s all ease;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+#splash button:nth-child(1){
+  animation-delay: 0.5s;
+}
+#splash button:nth-child(2){
+  animation-delay: 0.6s;
+}
+
+.square-tile{
+  min-height: 8rem;
+  min-width: 8rem;
+  border-radius: 20%;
+  background-color: var(--primary-color-opaque);
+  border: 1px solid var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease;
+}
+.square-tile:hover{
+  background-color: var(--primary-color);
+  border-color: var(--accent-color-1);
+  box-shadow: var(--accent-color-2) 0 0 0.5rem;
+  scale: 1.1;
+  transition: 0.3s all ease;
+}
+.long-tile img, .square-tile img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 20%;
+}
+.icon-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.long-tile{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.long-tile-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.masked-background {
+
+  background-image: linear-gradient(210deg, var(--accent-color-1), var(--accent-color-2));
+  height: 360px;
+  width: 360px;
+  mask-image: url("/src/assets/images/HCScott3.png");
+  -webkit-mask-image: url("/src/assets/images/HCScott3.png");
+
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+
+}
+
+.no-copy {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+section.page {
+  position: relative;
+  display: none !important;
+  color: var(--secondary-color);
+}
+
+section.page:target ~ #splash{
+  display: none !important;
+}
+
+section.page:target {
+  display: block !important;
+}
+
+div#experience-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+#experience{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-right: 4%;
+  gap: 1rem;
+  bottom: 0;
+}
+
+footer #social-links svg {
+  height: 3rem;
+  width: 3rem;
+  padding: 0.25rem;
+  margin: 0.5rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 20%;
+  fill: var(--secondary-color);
+  transition: 0.3s all ease;
+
+}
+
+footer #social-links svg:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px;
+  transition: 0.3s all ease;
+}
