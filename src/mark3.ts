@@ -352,7 +352,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                             <h3>Education</h3>
                             <div id="UU" class="exp-item cursor-pointer">
                                 <div class="image-container">
-                                    <img class="exp-image" src="/assets/images/UtrechtUniversity.jpg" />
+                                    <img alt="Utrecht University Icon" class="exp-image" src="/assets/images/UtrechtUniversity.jpg" />
                                 </div>
                                 <div class="exp-content" >
                                     <div class="exp-text">
@@ -364,7 +364,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                             </div>
                             <div id="NJIT" class="exp-item cursor-pointer">
                                 <div class="image-container">
-                                    <img class="exp-image" src="/assets/images/NJIT.jpg" />
+                                    <img alt="NJIT Icon" class="exp-image" src="/assets/images/NJIT.jpg" />
                                 </div>
                                 <div class="exp-content" >
                                     <div class="exp-text">
@@ -379,7 +379,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                             <h3>Work</h3>
                             <div id="SMF" class="exp-item cursor-pointer">
                                 <div class="image-container">
-                                    <img class="exp-image" src="/assets/images/SportsMainFrame.jpg" />
+                                    <img alt="SportsMainFrame Icon" class="exp-image" src="/assets/images/SportsMainFrame.jpg" />
                                 </div>
                                 <div class="exp-content cursor-pointer" >
                                     <div class="exp-text">
@@ -391,7 +391,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                             </div>
                             <div id="TNO" class="exp-item cursor-pointer">
                                 <div class="image-container">
-                                    <img class="exp-image" src="/assets/images/TNO.jpg" />
+                                    <img alt="TNO Icon" class="exp-image" src="/assets/images/TNO.jpg" />
                                 </div>
                                 <div class="exp-content" >
                                     <div class="exp-text">
@@ -403,7 +403,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                             </div>
                             <div id="GraphPolaris" class="exp-item cursor-pointer">
                                 <div class="image-container">
-                                    <img class="exp-image" src="/assets/images/GraphPolaris.jpg" />
+                                    <img alt="GraphPolaris Icon" class="exp-image" src="/assets/images/GraphPolaris.jpg" />
                                 </div>
                                 <div class="exp-content " >
                                     <div class="exp-text">
@@ -415,7 +415,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                             </div>
                             <div id="ADP" class="exp-item cursor-pointer">
                                 <div class="image-container">
-                                    <img class="exp-image" src="/assets/images/ADP.jpg" />
+                                    <img alt="ADP Icon" class="exp-image" src="/assets/images/ADP.jpg" />
                                 </div>
                                 <div class="exp-content" >
                                     <div class="exp-text">
@@ -437,7 +437,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <div class="container-content">
                     <div id="ADP" class="exp-item cursor-pointer">
                         <div class="image-container">
-                            <img class="exp-image" src="/assets/images/ADP.jpg" />
+                            <img alt="ADP Icon" class="exp-image" src="/assets/images/ADP.jpg" />
                         </div>
                         <div class="exp-content" >
                             <div class="exp-text">
