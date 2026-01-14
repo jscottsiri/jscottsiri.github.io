@@ -1,6 +1,7 @@
 import './m3-styles.css'
 import {ToggleLongTiles} from "./select_toggle.ts";
 import {followMouse} from "./followMouse.ts";
+import {menuToggle} from "./menu-toggle.ts";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div >
@@ -31,6 +32,18 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     </header>
     <body>
+        <section id="mobile-nav-menu">
+            <div>
+                <button type="button" class="mobile-nav-cancel" id="mobile-nav-cancel" ><svg class="no-pointer-events" xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 384 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg></button>
+            </div>
+            <ul>
+                <li><a class="mobile-nav-button" href="#"><button>Home</button></a></li>
+                <li><a class="mobile-nav-button" href="#about"><button>About</button></a></li>
+                <li><a class="mobile-nav-button" href="#skills"><button>Skills</button></a></li>
+                <li><a class="mobile-nav-button" href="#experience"><button>Experience</button></a></li>
+                <li class="dont"><a class="mobile-nav-button" href="#projects"><button>Projects</button></a></li>
+            </ul>
+        </section>
         <section id="splash">
             <div class="full-container tron-background">
                 <div class="split near-full-container">
@@ -469,5 +482,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 `
 
 ToggleLongTiles();
-followMouse("container")
+followMouse("container");
+menuToggle("mobile-nav-menu","nav-menu-toggle",["mobile-nav-button", "mobile-nav-cancel"])
 // hoverTilt("Scott-Face",20,20);
