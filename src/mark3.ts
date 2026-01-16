@@ -2,6 +2,8 @@ import './m3-styles.css'
 import {ToggleLongTiles} from "./select_toggle.ts";
 import {followMouse} from "./followMouse.ts";
 import {menuToggle} from "./menu-toggle.ts";
+import {ScrollEffects} from "./ScrollEffects.ts";
+import {EffectWhileInViewport} from "./EffectWhileInViewport.ts";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div >
@@ -101,172 +103,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 </div>
             </div>
         </section>
-<!--        <section id="about" class="page">-->
-<!--        <div>-->
-<!--            <h2>About Me</h2>-->
-<!--            <p>Nice to see you here!</p>-->
-<!--            <h4>Who am I?</h4>-->
-<!--            <p>I'm Scott Siri, a technical creative with an eye for UX. I've been coding since I was 15, where I took my first programming class and my life has never been the same. It's fun for me. Designing and building applications is an outlet for both my analytical and creatives sides.</p>-->
-<!--            <p>I am fundamentally a problem solver. I meet challenges with curiosity and a determination to turn them into opportunities. Whenever I hit a roadblock, I figure out why it happened and use it as a learning experience. </p>-->
-<!--            <p>I am curious. I did my Master's abroad in the Netherlands to get a different perspective. I wanted to learn how people all over the world interact with technology, not just the people in one corner of it. I am always seeking to learn something new.</p>-->
-<!--            <h4>Hobbies & Interests</h4>-->
-<!--            <p>Outside of development, I keep myself busy. I am a lifelong learner, always looking to find something new. I've been playing with creative writing lately, especially with speculative fiction. I enjoy tabletop games with my friends (lately I've been playing DCC and a homebrew system I made). To keep myself active, I am a hobbyist distance runner (5ks and 10ks mostly).</p>-->
-<!--            <br>-->
-<!--            <p>If you want to chat, reach out at <span class="strong-text">hello@jscottsiri.com</span></p>-->
-<!--        </div>-->
-<!--        <div></div>-->
-<!--        </section>-->
-<!--        <hr>-->
-<!--        <section id="skills" class="page">-->
-<!--             <h2>Skills</h2>-->
-<!--            <div class="flex-container">-->
-<!--                <div class="flex-col">-->
-<!--                    <h3>Languages</h3>-->
-<!--                    <ul class="icon-list-items">-->
-<!--                        <li><img src="/assets/icons/TechStack/HTML5.svg" width="32" height="32" class="tech-icon" alt="HTML5" /><div>HTML</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/CSS3.svg" width="32" height="32" class="tech-icon" alt="CSS3" /><div>CSS</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/JavaScript.svg" width="32" height="32" class="tech-icon" alt="JavaScript" /><div>JavaScript</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/TypeScript.svg" width="32" height="32" class="tech-icon" alt="TypeScript" /><div>TypeScript</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Python.svg" width="32" height="32" class="tech-icon" alt="Python" /><div>Python</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/CSharp.svg" width="32" height="32" class="tech-icon" alt="C#" /><div>C#</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Java.svg" width="32" height="32" class="tech-icon" alt="Java" /><div>Java</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Azure%20SQL%20Database.svg" width="32" height="32" class="tech-icon" alt="Java" /><div>SQL</div></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--                <div class="flex-col near-full-container">-->
-<!--                    <h3>Frameworks & Libraries</h3>               -->
-<!--                    <ul class="icon-list-items">-->
-<!--                        <li><img src="/assets/icons/TechStack/React.svg" width="32" height="32" class="tech-icon" alt="React" /><div>React</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Vue.js.svg" width="32" height="32" class="tech-icon" alt="Vue.js" /><div>Vue.js</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Redux.svg" width="32" height="32" class="tech-icon" alt="Redux" /><div>Redux</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Node.js.svg" width="32" height="32" class="tech-icon" alt="Node.js" /><div>Node.js</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Express.svg" width="32" height="32" class="tech-icon" alt="Express" /><div>Express</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Vite.js.svg" width="32" height="32" class="tech-icon" alt="Vite" /><div>Vite</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Tailwind%20CSS.svg" width="32" height="32" class="tech-icon" alt="Tailwind CSS" /><div>Tailwind CSS</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Material%20UI.svg" width="32" height="32" class="tech-icon" alt="MaterialUI" /><div>MaterialUI</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Pandas.svg" width="32" height="32" class="tech-icon" alt="Pandas" /><div>Pandas</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/NumPy.svg" width="32" height="32" class="tech-icon" alt="NumPy" /><div>NumPy</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Jest.svg" width="32" height="32" class="tech-icon" alt="Jest" /><div>Jest</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Unity.svg" width="32" height="32" class="tech-icon" alt="Unity" /><div>Unity</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/NET.svg" width="32" height="32" class="tech-icon" alt=".NET" /><div>.NET</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Socket.io.svg" width="32" height="32" class="tech-icon" alt="Socket.io" /><div>Socket.io</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/ReactRouter.svg" width="32" height="32" class="tech-icon" alt="React Router" /><div>React Router</div></li>-->
-<!--                    </ul>-->
-<!--                </div>             -->
-<!--                <div  class="flex-col">-->
-<!--                    <h3>DevOps/Tooling</h3>-->
-<!--                    <ul class="icon-list-items">-->
-<!--                        <li><img src="/assets/icons/TechStack/Git.svg" width="32" height="32" class="tech-icon" alt="Git" /><div>Git</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/GitHub.svg" width="32" height="32" class="tech-icon" alt="GitHub" /><div>GitHub</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/GitLab.svg" width="32" height="32" class="tech-icon" alt="GitLab" /><div>GitLab</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Redis.svg" width="32" height="32" class="tech-icon" alt="Redis" /><div>Redis</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Docker.svg" width="32" height="32" class="tech-icon" alt="Docker" /><div>Docker</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Azure.svg" width="32" height="32" class="tech-icon" alt="Azure" /><div>Azure</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/BitBucket.svg" width="32" height="32" class="tech-icon" alt="BitBucket" /><div>BitBucket</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Jira.svg" width="32" height="32" class="tech-icon" alt="Jira" /><div>Jira</div></li>-->
-<!--                    </ul>-->
-<!--                </div>               -->
-<!--                <div  class="flex-col">-->
-<!--                    <h3>Apps</h3>-->
-<!--                    <ul class="icon-list-items">-->
-<!--                        <li><img src="/assets/icons/TechStack/Figma.svg" width="32" height="32" class="tech-icon" alt="Figma" /><div>Figma</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Adobe%20Photoshop.svg" width="32" height="32" class="tech-icon" alt="Adobe Photoshop" /><div>Photoshop</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Adobe%20Illustrator.svg" width="32" height="32" class="tech-icon" alt="Adobe Illustrator" /><div>Illustrator</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/WebStorm.svg" width="32" height="32" class="tech-icon" alt="WebStorm" /><div>WebStorm</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Rider.svg" width="32" height="32" class="tech-icon" alt="Rider" /><div>Rider</div></li>-->
-<!--                        <li><img src="/assets/icons/TechStack/Visual%20Studio%20Code%20(VS%20Code).svg" width="32" height="32" class="tech-icon" alt="VSCode" /><div>VSCode</div></li>-->
-
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--        </section>-->
-<!--        <hr>-->
-<!--        <section id="experience" class="page">-->
-<!--            <h2>Experience</h2>-->
-<!--            <div id="experience-container-2" class="split near-full-container">-->
-<!--                <div>-->
-<!--                    <h3>Education</h3>-->
-<!--                    <div id="UU" class="exp-item cursor-pointer">-->
-<!--                        <div class="image-container">-->
-<!--                            <img class="exp-image" src="/assets/images/UtrechtUniversity.jpg" />-->
-<!--                        </div>-->
-<!--                        <div class="exp-content" >-->
-<!--                            <div class="exp-text">-->
-<!--                                <div class="strong-text">Human-Computer Interaction MSc</div>-->
-<!--                                <div class="light-text">Utrecht University</div>-->
-<!--                                <div class="light-text"><span>Sep. 2022</span> - <span>Aug. 2024</span></div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div id="NJIT" class="exp-item cursor-pointer">-->
-<!--                        <div class="image-container">-->
-<!--                            <img class="exp-image" src="/assets/images/NJIT.jpg" />-->
-<!--                        </div>-->
-<!--                        <div class="exp-content" >-->
-<!--                            <div class="exp-text">-->
-<!--                                <div class="strong-text">Human Computer Interaction BS</div>-->
-<!--                                <div class="light-text">New Jersey Institute of Technology</div>-->
-<!--                                <div class="light-text"><span>Sep. 2016</span> - <span>May 2020</span></div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <h3>Work</h3>-->
-<!--                    <div id="SMF" class="exp-item cursor-pointer">-->
-<!--                        <div class="image-container">-->
-<!--                            <img class="exp-image" src="/assets/images/SportsMainFrame.jpg" />-->
-<!--                        </div>-->
-<!--                        <div class="exp-content cursor-pointer" >-->
-<!--                            <div class="exp-text">-->
-<!--                                <div class="strong-text">Chief Technology Officer/Lead Developer</div>-->
-<!--                                <div class="light-text">SportsMainFrame, LLC</div>-->
-<!--                                <div class="light-text"><span>Aug. 2024</span> - <span>Jan 2026</span></div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div id="TNO" class="exp-item cursor-pointer">-->
-<!--                        <div class="image-container">-->
-<!--                            <img class="exp-image" src="/assets/images/TNO.jpg" />-->
-<!--                        </div>-->
-<!--                        <div class="exp-content" >-->
-<!--                            <div class="exp-text">-->
-<!--                                <div class="strong-text">Research Developer (Thesis)</div>-->
-<!--                                <div class="light-text">TNO</div>-->
-<!--                                <div class="light-text"><span>Nov. 2023</span> - <span>Jun. 2024</span></div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div id="GraphPolaris" class="exp-item cursor-pointer">-->
-<!--                        <div class="image-container">-->
-<!--                            <img class="exp-image" src="/assets/images/GraphPolaris.jpg" />-->
-<!--                        </div>-->
-<!--                        <div class="exp-content " >-->
-<!--                            <div class="exp-text">-->
-<!--                                <div class="strong-text">UX Engineer (Contractor)</div>-->
-<!--                                <div class="light-text">GraphPolaris</div>-->
-<!--                                <div class="light-text"><span>May 2023</span> - <span>Oct. 2023</span></div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div id="ADP" class="exp-item cursor-pointer">-->
-<!--                        <div class="image-container">-->
-<!--                            <img class="exp-image" src="/assets/images/ADP.jpg" />-->
-<!--                        </div>-->
-<!--                        <div class="exp-content" >-->
-<!--                            <div class="exp-text">-->
-<!--                                <div class="strong-text">Application Developer</div>-->
-<!--                                <div class="light-text">Automatic Data Processing</div>-->
-<!--                                <div class="light-text"><span>Aug. 2020</span> - <span>Aug. 2022</span></div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
-<!--        <hr>-->
-        <section id="about" class="page">
+        <section id="about" class="page animate-on-scroll">
             <div class="container">
                 <h2 class="container-title">About Me</h2>
                 <div class="container-content">
@@ -287,27 +124,27 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             </div>
         </section>
         <hr>
-        <section id="skills" class="page">
+        <section id="skills" class="page animate-on-scroll">
             <div class="container">
                 <h2 class="container-title">Skills</h2>
                 <div class="container-content">
                     <div class="flex-container flex-col">
                         <div class="flex-col">
                             <h3>Languages</h3>
-                            <ul class="tech-icon-list flex-row">
-                                <li><img src="/assets/icons/TechStack/HTML5.svg" width="32" height="32" class="tech-icon" alt="HTML5" /><div>HTML</div></li>
-                                <li><img src="/assets/icons/TechStack/CSS3.svg" width="32" height="32" class="tech-icon" alt="CSS3" /><div>CSS</div></li>
-                                <li><img src="/assets/icons/TechStack/JavaScript.svg" width="32" height="32" class="tech-icon" alt="JavaScript" /><div>JavaScript</div></li>
-                                <li><img src="/assets/icons/TechStack/TypeScript.svg" width="32" height="32" class="tech-icon" alt="TypeScript" /><div>TypeScript</div></li>
-                                <li><img src="/assets/icons/TechStack/Python.svg" width="32" height="32" class="tech-icon" alt="Python" /><div>Python</div></li>
-                                <li><img src="/assets/icons/TechStack/CSharp.svg" width="32" height="32" class="tech-icon" alt="C#" /><div>C#</div></li>
-                                <li><img src="/assets/icons/TechStack/Java.svg" width="32" height="32" class="tech-icon" alt="Java" /><div>Java</div></li>
-                                <li><img src="/assets/icons/TechStack/Azure%20SQL%20Database.svg" width="32" height="32" class="tech-icon" alt="Java" /><div>SQL</div></li>
+                            <ul class="tech-icon-list flex-row animate-on-scroll">
+                                <li class="tech-icon-item"><img src="/assets/icons/TechStack/HTML5.svg" width="32" height="32" class="tech-icon" alt="HTML5" /><div>HTML</div></li>
+                                <li class="tech-icon-item"><img src="/assets/icons/TechStack/CSS3.svg" width="32" height="32" class="tech-icon" alt="CSS3" /><div>CSS</div></li>
+                                <li class="tech-icon-item"><img src="/assets/icons/TechStack/JavaScript.svg" width="32" height="32" class="tech-icon" alt="JavaScript" /><div>JavaScript</div></li>
+                                <li class="tech-icon-item"><img src="/assets/icons/TechStack/TypeScript.svg" width="32" height="32" class="tech-icon" alt="TypeScript" /><div>TypeScript</div></li>
+                                <li class="tech-icon-item"><img src="/assets/icons/TechStack/Python.svg" width="32" height="32" class="tech-icon" alt="Python" /><div>Python</div></li>
+                                <li class="tech-icon-item"><img src="/assets/icons/TechStack/CSharp.svg" width="32" height="32" class="tech-icon" alt="C#" /><div>C#</div></li>
+                                <li class="tech-icon-item"><img src="/assets/icons/TechStack/Java.svg" width="32" height="32" class="tech-icon" alt="Java" /><div>Java</div></li>
+                                <li class="tech-icon-item"><img src="/assets/icons/TechStack/Azure%20SQL%20Database.svg" width="32" height="32" class="tech-icon" alt="SQL" /><div>SQL</div></li>
                             </ul>
                         </div>
                         <div class="flex-col near-full-container">
                             <h3>Frameworks & Libraries</h3>               
-                            <ul class="tech-icon-list flex-row">
+                            <ul class="tech-icon-list flex-row animate-on-scroll">
                                 <li><img src="/assets/icons/TechStack/React.svg" width="32" height="32" class="tech-icon" alt="React" /><div>React</div></li>
                                 <li><img src="/assets/icons/TechStack/Vue.js.svg" width="32" height="32" class="tech-icon" alt="Vue.js" /><div>Vue.js</div></li>
                                 <li><img src="/assets/icons/TechStack/Redux.svg" width="32" height="32" class="tech-icon" alt="Redux" /><div>Redux</div></li>
@@ -327,7 +164,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                         </div>             
                         <div  class="flex-col">
                             <h3>DevOps/Tooling</h3>
-                            <ul class="tech-icon-list flex-row">
+                            <ul class="tech-icon-list flex-row animate-on-scroll">
                                 <li><img src="/assets/icons/TechStack/Git.svg" width="32" height="32" class="tech-icon" alt="Git" /><div>Git</div></li>
                                 <li><img src="/assets/icons/TechStack/GitHub.svg" width="32" height="32" class="tech-icon" alt="GitHub" /><div>GitHub</div></li>
                                 <li><img src="/assets/icons/TechStack/GitLab.svg" width="32" height="32" class="tech-icon" alt="GitLab" /><div>GitLab</div></li>
@@ -340,7 +177,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                         </div>               
                         <div  class="flex-col">
                             <h3>Apps</h3>
-                            <ul class="tech-icon-list flex-row">
+                            <ul class="tech-icon-list flex-row animate-on-scroll">
                                 <li><img src="/assets/icons/TechStack/Figma.svg" width="32" height="32" class="tech-icon" alt="Figma" /><div>Figma</div></li>
                                 <li><img src="/assets/icons/TechStack/Adobe%20Photoshop.svg" width="32" height="32" class="tech-icon" alt="Adobe Photoshop" /><div>Photoshop</div></li>
                                 <li><img src="/assets/icons/TechStack/Adobe%20Illustrator.svg" width="32" height="32" class="tech-icon" alt="Adobe Illustrator" /><div>Illustrator</div></li>
@@ -351,92 +188,304 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                             </ul>
                         </div>
                     </div>
-                
                 </div>
             </div>
         </section>
         <hr>
         <section id="experience" class="page">
             <div class="container">
-                <h2 class="container-title">Experience</h2>
-                <div class="container-content">
-                    <div class="flex-split gap-4">
-                        <div >
-                            <h3>Education</h3>
-                            <div id="UU" class="exp-item cursor-pointer">
-                                <div class="image-container">
+                <h2 class="animate-on-scroll">Experience</h2>
+                <div class="experience-container education animate-on-scroll"  id="Utrecht-University">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="flex-side gap-1">
+                                <div class="flex-vertical-center">
                                     <img alt="Utrecht University Icon" class="exp-image" src="/assets/images/UtrechtUniversity.jpg" />
                                 </div>
-                                <div class="exp-content" >
-                                    <div class="exp-text">
-                                        <div class="strong-text">Human-Computer Interaction MSc</div>
-                                        <div class="light-text">Utrecht University</div>
-                                        <div class="light-text"><span>Sep. 2022</span> - <span>Aug. 2024</span></div>
-                                    </div>
+                                <div class="flex-down">
+                                    <p>Utrecht University</p>
+                                    <p class="strong-text">Human-Computer Interaction, MSc</p>
                                 </div>
                             </div>
-                            <div id="NJIT" class="exp-item cursor-pointer">
-                                <div class="image-container">
-                                    <img alt="NJIT Icon" class="exp-image" src="/assets/images/NJIT.jpg" />
-                                </div>
-                                <div class="exp-content" >
-                                    <div class="exp-text">
-                                        <div class="strong-text">Human Computer Interaction BS</div>
-                                        <div class="light-text">New Jersey Institute of Technology</div>
-                                        <div class="light-text"><span>Sep. 2016</span> - <span>May 2020</span></div>
-                                    </div>
-                                </div>
+                            <div class="flex-down">
+                                <p><span>Sep. 2022</span> - <span>Jun. 2024</span></p>
+                                <p>Utrecht, NL</p>
                             </div>
                         </div>
-                        <div>
-                            <h3>Work</h3>
-                            <div id="SMF" class="exp-item cursor-pointer">
-                                <div class="image-container">
+                        <hr>
+                        <div class="experience-content">
+                            <div class="experience-description">
+                                <p>By 2022, I wanted to expand on my existing knowledge for designing and improving technology. I received acceptances to several different universities, but found my future program in the Netherlands. Looking through courses and talking to alumni, I found that Human-Computer Interaction program at Utrecht University would best expand my skillset. In addition to learning advanced technical concepts, I would learn to work across multi-national teams.</p>
+                                <p>During my time at Utrecht, I learned from experts from across Europe. Unlike many programs, I had a lot of flexibility in deciding which classes I took, letting me explore concepts like data science, adaptive systems, and rapid prototyping. Many of my courses were hands-on, often grouping me into groups with students from all over the world to solve problems. Additionally, I worked with data visualization at GraphPolaris during the summer and fall, getting development & UX experience in the Dutch startup scene.</p>
+                                <p>The end of my program had me working my thesis. I managed to find an industry position at TNO Defense, Safety, and Security- where I worked fulltime on my research. There, I got to work with an innovative group of Dutch researchers and professionals in the Human-Machine Teaming department. My thesis research, which was about how avatar fidelity impacts perceptions of prototyped 3D environments in virtual reality, helped inform design guidelines for high-impact design situations for the Dutch Navy. </p>
+                            </div>
+                            <hr>
+                            <div class="experience-aside">
+                                <p>Key Courses:</p>
+                                <p>
+                                    <ul>
+                                        <li>Adaptive Interactive Systems</li>
+                                        <li>Interaction Technology Innovation</li>
+                                        <li>Multi-Agent Systems</li>
+                                        <li>Social Computing</li>
+                                        <li>Data Science & Society</li>
+                                        <li>Technologies for Learning</li>
+                                        <li>Quantitative Research Methods</li>
+                                        <li>Qualitative Research Methods</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>        
+                <div class="experience-container education animate-on-scroll" id="NJIT">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="flex-side gap-1">
+                                <div class="flex-vertical-center">
+                                    <img alt="NJIT Icon" class="exp-image" src="/assets/images/NJIT.jpg" />
+                                </div>
+                                <div class="flex-down">
+                                    <p>New Jersey Institute of Technology</p>
+                                    <p class="strong-text">Human-Computer Interaction, BS</p>
+                                </div>
+                            </div>
+                            <div class="flex-down">
+                                <p><span>Sep. 2016</span> - <span>May 2020</span></p>
+                                <p>Newark, NJ</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="experience-content">
+                            <div class="experience-description">
+                                <p>In 2016, I received an acceptance to the NJIT Albert Dorman Honors College for Computer Science. I enjoyed my computing courses immensely and became interested in how to build technology with people in mind. After some I exploration, I found the Human-Computer Interaction, a joint program with Rutgers University. I was hooked and spend the next years learning how to build technology for people. At NJIT, I learned how to design and develop applications. My courses at Rutgers let me learn the cognitive side of interaction, giving me a world class education both for the technical and design aspects of development.</p>
+                                <p>While at NJIT, I found the Social Interaction Lab- run by Dr. Yvette Wohn. Working with her, I got involved in with research relating to livestreaming and social media, including livestreaming, virtual reality, and multiple account management. By the time I graduated, I had 3 peer reviewed publications at academic conferences and journals. The process let me learn a lot about how to study users and how they engage with technological systems.</p>
+                                <p>Also at NJIT, I found myself in many leadership positions. While a Sophomore and Junior, I was on the Executive Board for NJIT Game Club- helping manage weekly events and occasional tournaments. Not long after, I became a Resident Assistant and helped keep the campus running smoothly. Being an Resident Assistant taught me to keep calm under pressure and kept me engaged with my community- especially as COVID hit. During this time, I joined the NJIT Senate, first as the Human-Computer Interaction major representative and later the Ying Wu College of Computing's departmental representative.</p>
+                            </div>
+                            <hr>
+                            <div class="experience-aside">
+                                <p>Honors & Responsibilities:</p>
+                                <p>
+                                    <ul>
+                                        <li>Magna Cum Laude (3.82 GPA)</li>
+                                        <li>Albert Dorman Honors Scholar</li>
+                                        <li>Dana Knox Research Showcase Participant</li>
+                                        <li>Resident Assistant</li>
+                                        <li>NJIT Student Senator</li>
+                                    </ul>
+                                </p>
+                                <hr>
+                                <p>Key Courses:</p>
+                                <p>
+                                    <ul>
+                                        <li>Advanced Website Development</li>
+                                        <li>Advanced Web Applications</li>
+                                        <li>Discovering User Needs for UX</li>
+                                        <li>Usability & Measuring UX</li>
+                                        <li>Designing the User Experience</li>
+                                        <li>Foundations of Game Production</li>
+                                        <li>Cyberpsychology</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="experience-container work animate-on-scroll" id="SportsMainFrame">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="flex-side gap-1">
+                                <div class="flex-vertical-center">
                                     <img alt="SportsMainFrame Icon" class="exp-image" src="/assets/images/SportsMainFrame.jpg" />
                                 </div>
-                                <div class="exp-content cursor-pointer" >
-                                    <div class="exp-text">
-                                        <div class="strong-text">Chief Technology Officer/Lead Developer</div>
-                                        <div class="light-text">SportsMainFrame, LLC</div>
-                                        <div class="light-text"><span>Aug. 2024</span> - <span>Jan 2026</span></div>
-                                    </div>
+                                <div class="flex-down">
+                                    <p>SportsMainFrame, LLC</p>
+                                    <p class="strong-text">Chief Technology Officer/Lead Developer</p>
                                 </div>
                             </div>
-                            <div id="TNO" class="exp-item cursor-pointer">
-                                <div class="image-container">
+                            <div class="flex-down">
+                                <p><span>Aug. 2024</span> - <span>Jan. 2026</span></p>
+                                <p>Remote/Rockaway, NJ</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="experience-content">
+                            <div class="experience-description">
+                                <p>In the Summer of 2024, SportsMainFrame was looking to build a recreational sports management platform, combining rostering, scheduling, payments, and messaging into a single platform. With volunteerism at a low, the platform could reduce the load put in place by manual or less comprehensive options.</p>
+                                <p>I led the 0-1 design and development for the platform. My responsibilities were diverse. I any given day, I could be using Figma to mock interfaces and get feedback, React and Tailwind to build out the frontend, or Node.js and Express to run SQL queries and build out API endpoints for the backend. Additionally, I was the primary person interfacing with Azure and managing GitHub repositories, running DevOps for the project. With a lean resource pool, I built out both an in-depth admin management web application and a streamlined responsive application for the end user to manage and reference their obligations.</p>
+                                <p>I played a key interpersonal role in the company. Within the company, I managed a small team of part-time contractors who helped with development. I held regular meetings with my team to track progress and unblock problems. Outside of the company, I frequently participated in sessions with clients to understand pain points, their needs and wants, and contribute technical information to the discussion. I frequently met with business partners, like payment processors and cybersecurity teams, to address updates and concerns. After launch, I acted as a contact point for users and managed bugs developed during the process.</p>
+                                <p>While SportsMainFrame was integrated into 25+ NJ towns, the platform was ultimately shut down in January of 2026. Despite this, the role was an incredible learning experience. I was the chief architect of the project, growing my developer skillset and my overall product skillset.</p>
+                            </div>
+                            <hr>
+                            <div class="experience-aside">
+                                <p>Stack Used:</p>
+                                <p>
+                                    <ul class="tech-icon-list flex-row">
+                                        <li><img src="/assets/icons/TechStack/HTML5.svg" width="32" height="32" class="tech-icon" alt="HTML5" /><div>HTML</div></li>
+                                        <li><img src="/assets/icons/TechStack/CSS3.svg" width="32" height="32" class="tech-icon" alt="CSS3" /><div>CSS</div></li>
+                                        <li><img src="/assets/icons/TechStack/JavaScript.svg" width="32" height="32" class="tech-icon" alt="JavaScript" /><div>JavaScript</div></li>
+                                        <li><img src="/assets/icons/TechStack/TypeScript.svg" width="32" height="32" class="tech-icon" alt="TypeScript" /><div>TypeScript</div></li>
+                                        <li><img src="/assets/icons/TechStack/React.svg" width="32" height="32" class="tech-icon" alt="React" /><div>React</div></li>
+                                        <li><img src="/assets/icons/TechStack/Tailwind%20CSS.svg" width="32" height="32" class="tech-icon" alt="Tailwind CSS" /><div>Tailwind CSS</div></li>
+                                        <li><img src="/assets/icons/TechStack/Node.js.svg" width="32" height="32" class="tech-icon" alt="Node.js" /><div>Node.js</div></li>
+                                        <li><img src="/assets/icons/TechStack/Express.svg" width="32" height="32" class="tech-icon" alt="Express" /><div>Express</div></li>
+                                        <li><img src="/assets/icons/TechStack/Azure%20SQL%20Database.svg" width="32" height="32" class="tech-icon" alt="SQL" /><div>SQL</div></li>
+                                        <li><img src="/assets/icons/TechStack/Azure.svg" width="32" height="32" class="tech-icon" alt="Azure" /><div>Azure</div></li>
+                                        <li><img src="/assets/icons/TechStack/Git.svg" width="32" height="32" class="tech-icon" alt="Git" /><div>Git</div></li>
+                                        <li><img src="/assets/icons/TechStack/GitHub.svg" width="32" height="32" class="tech-icon" alt="GitHub" /><div>GitHub</div></li>
+                                        <li><img src="/assets/icons/TechStack/Docker.svg" width="32" height="32" class="tech-icon" alt="Docker" /><div>Docker</div></li>
+                                        <li><img src="/assets/icons/TechStack/Figma.svg" width="32" height="32" class="tech-icon" alt="Figma" /><div>Figma</div></li>
+                                    </ul>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="experience-container work animate-on-scroll" id="TNO">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="flex-side gap-1">
+                                <div class="flex-vertical-center">
                                     <img alt="TNO Icon" class="exp-image" src="/assets/images/TNO.jpg" />
                                 </div>
-                                <div class="exp-content" >
-                                    <div class="exp-text">
-                                        <div class="strong-text">Research Developer (Thesis)</div>
-                                        <div class="light-text">TNO</div>
-                                        <div class="light-text"><span>Nov. 2023</span> - <span>Jun. 2024</span></div>
-                                    </div>
+                                <div class="flex-down">
+                                    <p>TNO (Human-Machine Teaming)</p>
+                                    <p class="strong-text">Research Developer (Thesis)</p>
                                 </div>
                             </div>
-                            <div id="GraphPolaris" class="exp-item cursor-pointer">
-                                <div class="image-container">
+                            <div class="flex-down">
+                                <p><span>Nov. 2023</span> - <span>Jun. 2024</span></p>
+                                <p>Soesterberg, NL</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="experience-content">
+                            <div class="experience-description">
+                                <p>While doing my Thesis at Utrecht University, I managed to get a full-time, industry position with TNO's Human-Machine Teaming department. They were working on prototyping 3D workspaces with virtual reality so they could simulate efficiency before dedicating resources to construction. For my main project, I helped TNO identify how avatar fidelity impacted the perceptions of the environment. I worked with a high degree of autonomy, with periodic check-ins from my supervisors. In this project, I had to work on both development and research phases, both building out and running tests with the virtual world.</p>
+                                <p>During the development phase, I worked with C# to build out situations in Unity3D and cast them to HTC XR Elite headsets. I needed to build out network coordination between small groups of people in a shared space, so I needed effective synergy with reality and the virtual reality. This was true for both the simple abstract avatars and the complex, humanoid avatars. Additionally, I needed to be able to manage the virtual world from outside, so I worked with a Vue.js interface to manage the environment in the virtual simulations.</p>
+                                <p>For research, I tested groups of people's observations in virtual kitchens. Kitchens were workspaces that everyone was familiar with, so they made for good work-test environments. During the study, the users (in groups of two and three) would go through a series of virtual environments and then fill out surveys based on their observations. The users would do a set of rooms with a selected low-fidelity avatar and a set of rooms with a selected high-fidelity avatars. Additionally, notes were taken on observations made. Following the VR sessions, users were given a short, semi-structured interview that gave the opportunity to ask questions and clarify observations. This was then followed by a debriefing.</p>
+                                <p>After the study, data collected was broken down and analyzed. Numerical data was analyzed through t-tests using the Python libraries NumPy and Pandas. While there was minimal difference with their initial paired t-tests, exploratory analyses with independent t-tests for each room set suggested that the initial avatar fidelity, rather than current avatar fidelity, led to significant differences in team dynamics and behaviors.</p>
+                                <p>The results of the study suggest that avatar fidelity can prime a user to interpret their environment differently. Avatar fidelity influenced perceptions of interactivity and stylization in the virtual environment. Initial avatar fidelity may set a baseline for observations of prototyped spaces and team dynamics. These factors imply that avatar fidelity may impact the focus brainstorming and evaluation of 3D workspace prototypes. The insights from the study helped inform design guidelines for virtual reality prototyping at TNO.</p>
+                            </div>
+                            <hr>
+                            <div class="experience-aside">
+                                <p>Stack Used:</p>
+                                    <p>
+                                        <ul class="tech-icon-list flex-row">
+                                            <li><img src="/assets/icons/TechStack/CSharp.svg" width="32" height="32" class="tech-icon" alt="C#" /><div>C#</div></li>
+                                            <li><img src="/assets/icons/TechStack/NET.svg" width="32" height="32" class="tech-icon" alt=".NET" /><div>.NET</div></li>
+                                            <li><img src="/assets/icons/TechStack/Unity.svg" width="32" height="32" class="tech-icon" alt="Unity" /><div>Unity</div></li>
+                                            <li><img src="/assets/icons/TechStack/HTML5.svg" width="32" height="32" class="tech-icon" alt="HTML5" /><div>HTML</div></li><li><img src="/assets/icons/TechStack/CSS3.svg" width="32" height="32" class="tech-icon" alt="CSS3" /><div>CSS</div></li>
+                                            <li><img src="/assets/icons/TechStack/JavaScript.svg" width="32" height="32" class="tech-icon" alt="JavaScript" /><div>JavaScript</div></li>
+                                            <li><img src="/assets/icons/TechStack/TypeScript.svg" width="32" height="32" class="tech-icon" alt="TypeScript" /><div>TypeScript</div></li>
+                                            <li><img src="/assets/icons/TechStack/Vue.js.svg" width="32" height="32" class="tech-icon" alt="Vue.js" /><div>Vue.js</div></li>
+                                            <li><img src="/assets/icons/TechStack/Python.svg" width="32" height="32" class="tech-icon" alt="Python" /><div>Python</div></li>
+                                            <li><img src="/assets/icons/TechStack/Pandas.svg" width="32" height="32" class="tech-icon" alt="Pandas" /><div>Pandas</div></li>  
+                                            <li><img src="/assets/icons/TechStack/NumPy.svg" width="32" height="32" class="tech-icon" alt="NumPy" /><div>NumPy</div></li>
+                                            <li><img src="/assets/icons/TechStack/Git.svg" width="32" height="32" class="tech-icon" alt="Git" /><div>Git</div></li>
+                                            <li><img src="/assets/icons/TechStack/GitLab.svg" width="32" height="32" class="tech-icon" alt="GitLab" /><div>GitLab</div></li>
+                                        </ul> 
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="experience-container work animate-on-scroll" id="GraphPolaris">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="flex-side gap-1">
+                                <div class="flex-vertical-center">
                                     <img alt="GraphPolaris Icon" class="exp-image" src="/assets/images/GraphPolaris.jpg" />
                                 </div>
-                                <div class="exp-content " >
-                                    <div class="exp-text">
-                                        <div class="strong-text">UX Engineer (Contractor)</div>
-                                        <div class="light-text">GraphPolaris</div>
-                                        <div class="light-text"><span>May 2023</span> - <span>Oct. 2023</span></div>
-                                    </div>
+                                <div class="flex-down">
+                                    <p>GraphPolaris</p>
+                                    <p class="strong-text">UX Engineer (Contract)</p>
                                 </div>
                             </div>
-                            <div id="ADP" class="exp-item cursor-pointer">
-                                <div class="image-container">
+                            <div class="flex-down">
+                                <p><span>May 2023</span> - <span>Oct. 2023</span></p>
+                                <p>Utrecht, NL</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="experience-content">
+                            <div class="experience-description">
+                                <p>While studying at Utrecht University, I worked for a decentralized data-visualization startup as a UX Engineer. From the end of classes until my thesis, I build out dashboards using React TypeScript, Redux, Tailwind CSS, and MUI. I designed features with Figma and performed usability tests with the mock-ups, iterating on them and implementing them.</p>
+                                <p>I worked on a multinational AGILE team with developers and data analysts to visualize graph node data stored remotely. My multifaceted role meant that I wore many hats. I regularly worked with my peer developers to review and refine the available code, as well as provide design insights for features being built.</p>
+                                <p>One key feature I worked on was the application navigation system. The complexity of data visualization meant that accessing the right information at the right time was a primary user flow. I refined the navigation mechanisms on the dashboard, both designing and coding changes made. I additionally developed and tuned the database connection Splash Page. When users connected their remote database, we wanted to evoke key insights and options immediately when a user connected a database. This was done by showing summaries of the data supplied and the ways that graph nodes connected to each other.</p>
+                            </div>
+                            <hr>
+                            <div class="experience-aside">
+                                <p>Stack Used:</p>
+                                <p>
+                                    <ul class="tech-icon-list flex-row">
+                                        <li><img src="/assets/icons/TechStack/HTML5.svg" width="32" height="32" class="tech-icon" alt="HTML5" /><div>HTML</div></li>  
+                                        <li><img src="/assets/icons/TechStack/CSS3.svg" width="32" height="32" class="tech-icon" alt="CSS3" /><div>CSS</div></li>  
+                                        <li><img src="/assets/icons/TechStack/JavaScript.svg" width="32" height="32" class="tech-icon" alt="JavaScript" /><div>JavaScript</div></li>  
+                                        <li><img src="/assets/icons/TechStack/TypeScript.svg" width="32" height="32" class="tech-icon" alt="TypeScript" /><div>TypeScript</div></li>
+                                        <li><img src="/assets/icons/TechStack/Azure%20SQL%20Database.svg" width="32" height="32" class="tech-icon" alt="SQL" /><div>SQL</div></li>
+                                        <li><img src="/assets/icons/TechStack/React.svg" width="32" height="32" class="tech-icon" alt="React" /><div>React</div></li>
+                                        <li><img src="/assets/icons/TechStack/Redux.svg" width="32" height="32" class="tech-icon" alt="Redux" /><div>Redux</div></li>
+                                        <li><img src="/assets/icons/TechStack/Vite.js.svg" width="32" height="32" class="tech-icon" alt="Vite" /><div>Vite</div></li>
+                                        <li><img src="/assets/icons/TechStack/Tailwind%20CSS.svg" width="32" height="32" class="tech-icon" alt="Tailwind CSS" /><div>Tailwind CSS</div></li>
+                                        <li><img src="/assets/icons/TechStack/Material%20UI.svg" width="32" height="32" class="tech-icon" alt="MaterialUI" /><div>MaterialUI</div></li>
+                                        <li><img src="/assets/icons/TechStack/Git.svg" width="32" height="32" class="tech-icon" alt="Git" /><div>Git</div></li>
+                                        <li><img src="/assets/icons/TechStack/GitLab.svg" width="32" height="32" class="tech-icon" alt="GitLab" /><div>GitLab</div></li>
+                                        <li><img src="/assets/icons/TechStack/Docker.svg" width="32" height="32" class="tech-icon" alt="Docker" /><div>Docker</div></li>
+                                        <li><img src="/assets/icons/TechStack/Figma.svg" width="32" height="32" class="tech-icon" alt="Figma" /><div>Figma</div></li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="experience-container work animate-on-scroll" id="ADP">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="flex-side gap-1">
+                                <div class="flex-vertical-center">
                                     <img alt="ADP Icon" class="exp-image" src="/assets/images/ADP.jpg" />
                                 </div>
-                                <div class="exp-content" >
-                                    <div class="exp-text">
-                                        <div class="strong-text">Application Developer</div>
-                                        <div class="light-text">Automatic Data Processing</div>
-                                        <div class="light-text"><span>Aug. 2020</span> - <span>Aug. 2022</span></div>
-                                    </div>
+                                <div class="flex-down">
+                                    <p>Automatic Data Processing</p>
+                                    <p class="strong-text">Application Developer</p>
                                 </div>
+                            </div>
+                            <div class="flex-down">
+                                <p><span>Aug. 2020</span> - <span>Aug. 2022</span></p>
+                                <p>New York City, NY</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="experience-content">
+                            <div class="experience-description">
+                                <p>Following an internship in the Summer of 2019, I worked as a member of Aviato, an Agile team focused primarily on the payroll system of Lifion (now ADP Lyric HCM). Payroll related microservices are high-impact- not getting paid in an efficient, timely manner is crucial to any company. Clients, especially Fortune 500 companies, require a good deal of customization and control over the process.</p>
+                                <p>On any given day, I could be working anywhere in the stack.  I regularly contributed to frontend development by building and modifying user interfaces, adding in new functionalities, and refactoring legacy code. Oftentimes, I worked back into the business logic of the platform, working with SQL databases, Redis Caches, and API Endpoints to pipe data through the platform.</p>
+                                <p>Whether building features, fixing bugs, or improving legacy code, I acted as a full member of the Aviato team. I worked with product managers and my peer developers while participating in Scrum ceremonies, Sprint Planning, and Reviews. I regularly took part in QA methods, peer-reviewing code and building out both unit and integration tests for the code I wrote. I stored and maintained code with CI/CD tools like Git, BitBucket, and Jira.</p>
+                            </div>
+                            <hr>
+                            <div class="experience-aside">
+                                <p>Stack Used:</p>
+                                <p>
+                                    <ul class="tech-icon-list flex-row">
+                                        <li><img src="/assets/icons/TechStack/HTML5.svg" width="32" height="32" class="tech-icon" alt="HTML5" /><div>HTML</div></li>
+                                        <li><img src="/assets/icons/TechStack/CSS3.svg" width="32" height="32" class="tech-icon" alt="CSS3" /><div>CSS</div></li>
+                                        <li><img src="/assets/icons/TechStack/Python.svg" width="32" height="32" class="tech-icon" alt="Python" /><div>Python</div></li><li><img src="/assets/icons/TechStack/Java.svg" width="32" height="32" class="tech-icon" alt="Java" /><div>Java</div></li>
+                                        <li><img src="/assets/icons/TechStack/Jest.svg" width="32" height="32" class="tech-icon" alt="Jest" /><div>Jest</div></li>
+                                        <li><img src="/assets/icons/TechStack/Azure%20SQL%20Database.svg" width="32" height="32" class="tech-icon" alt="Java" /><div>SQL</div></li>
+                                        <li><img src="/assets/icons/TechStack/Git.svg" width="32" height="32" class="tech-icon" alt="Git" /><div>Git</div></li>
+                                        <li><img src="/assets/icons/TechStack/BitBucket.svg" width="32" height="32" class="tech-icon" alt="BitBucket" /><div>BitBucket</div></li>
+                                        <li><img src="/assets/icons/TechStack/Jira.svg" width="32" height="32" class="tech-icon" alt="Jira" /><div>Jira</div></li>
+                                        <li><img src="/assets/icons/TechStack/Docker.svg" width="32" height="32" class="tech-icon" alt="Docker" /><div>Docker</div></li>
+                                        <li><img src="/assets/icons/TechStack/Redis.svg" width="32" height="32" class="tech-icon" alt="Redis" /><div>Redis</div></li>
+                                    </ul>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -484,4 +533,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 ToggleLongTiles();
 followMouse("container");
 menuToggle("mobile-nav-menu","nav-menu-toggle",["mobile-nav-button", "mobile-nav-cancel"])
+ScrollEffects();
+EffectWhileInViewport("experience-container","viewCard","unviewCard")
 // hoverTilt("Scott-Face",20,20);
