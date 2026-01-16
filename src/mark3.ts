@@ -7,7 +7,7 @@ import {EffectWhileInViewport} from "./EffectWhileInViewport.ts";
 import {NavMenuTargeting} from "./NavMenuTargeting.ts";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div >
+  <div>
     <header class="site-header">
         <div id="logo"><span class="no-copy"><a class="a-button" href="#" >J Scott Siri</a></span></div>
         <div id="nav-container">
