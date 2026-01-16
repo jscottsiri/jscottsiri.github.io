@@ -742,6 +742,9 @@ section.page {
   box-sizing: border-box;
   padding: 0 1rem 0 0;
 }
+#social-links a svg{
+  background-color: var(--primary-color-opaque);
+}
 #skills {
 }
 
