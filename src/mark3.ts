@@ -12,11 +12,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <div id="logo"><span class="no-copy"><a class="a-button" href="#" >J Scott Siri</a></span></div>
         <div id="nav-container">
             <ul class="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li class="dont"><a href="#projects">Projects</a></li>
+                <li id="Home-Nav"><a href="#">Home</a></li>
+                <li id="About-Nav"><a href="#about">About</a></li>
+                <li id="Skills-Nav"><a href="#skills">Skills</a></li>
+                <li id="Experience-Nav"><a href="#experience">Experience</a></li>
+                <li id="Projects-Nav" class="dont"><a href="#projects">Projects</a></li>
             </ul>
         </div>
         <div id="social-links">
@@ -206,7 +206,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                     </ul>
                 </div>
             </div>
-            <div class="container">
+            <div class="container" id="experience-content-container">
                 <h2 class="animate-on-scroll">Experience</h2>
                 <div class="experience-container education animate-on-scroll"  id="Utrecht-University">
                     <div class="experience-card">
@@ -533,5 +533,5 @@ followMouse("container");
 menuToggle("mobile-nav-menu","nav-menu-toggle",["mobile-nav-button", "mobile-nav-cancel"])
 ScrollEffects();
 EffectWhileInViewport("experience-container","viewCard","unviewCard")
-NavMenuTargeting("active","inactive",[{viewElementID:"GraphPolaris",navElementID:"GP-Nav"},{viewElementID:"ADP",navElementID:"ADP-Nav"},{viewElementID:"TNO",navElementID:"TNO-Nav"},{viewElementID:"SportsMainFrame",navElementID:"SMF-Nav"},{viewElementID:"NJIT",navElementID:"NJIT-Nav"},{viewElementID:"Utrecht-University",navElementID:"UU-Nav"},{viewElementID:"experience",navElementID:"experience-menu-nav"}])
+NavMenuTargeting("active","inactive",[{viewElementID:"GraphPolaris",navElementID:"GP-Nav"},{viewElementID:"ADP",navElementID:"ADP-Nav"},{viewElementID:"TNO",navElementID:"TNO-Nav"},{viewElementID:"SportsMainFrame",navElementID:"SMF-Nav"},{viewElementID:"NJIT",navElementID:"NJIT-Nav"},{viewElementID:"Utrecht-University",navElementID:"UU-Nav"},{viewElementID:"experience-content-container",navElementID:"experience-menu-nav"},{viewElementID:"splash",navElementID:"Home-Nav"},{viewElementID:"about",navElementID:"About-Nav"},{viewElementID:"skills",navElementID:"Skills-Nav"},{viewElementID:"experience",navElementID:"Experience-Nav"},{viewElementID:"projects",navElementID:"Projects-Nav"}],)
 // hoverTilt("Scott-Face",20,20);
