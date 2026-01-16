@@ -197,7 +197,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <div id="experience-menu-nav" class="experience-menu-container">
                 <div class="experience-menu">
                     <ul class="experience-menu-list">
-                        <li id="UU-Nav" class="experience-menu-item active"><a href="#Utrecht-University"><button class="experience-menu-button"><img alt="Utrecht University Icon" class="experience-menu-img" src="/assets/images/UtrechtUniversity.jpg"/></button></a></li>
+                        <li id="UU-Nav" class="experience-menu-item"><a href="#Utrecht-University"><button class="experience-menu-button"><img alt="Utrecht University Icon" class="experience-menu-img" src="/assets/images/UtrechtUniversity.jpg"/></button></a></li>
                         <li id="NJIT-Nav" class="experience-menu-item"><a href="#NJIT"><button class="experience-menu-button"><img alt="NJIT Icon" class="experience-menu-img" src="/assets/images/NJIT.jpg"/></button></a></li>
                         <li id="SMF-Nav" class="experience-menu-item"><a href="#SportsMainFrame"><button class="experience-menu-button"><img alt="SportsMainFrame Icon" class="experience-menu-img" src="/assets/images/SportsMainFrame.jpg"/></button></a></li>
                         <li id="TNO-Nav" class="experience-menu-item"><a href="#TNO"><button class="experience-menu-button"><img alt="TNO Icon" class="experience-menu-img" src="/assets/images/TNO.jpg"/></button></a></li>

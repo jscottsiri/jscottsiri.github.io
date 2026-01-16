@@ -32,8 +32,10 @@ export function NavMenuTargeting(onEnterClass:string, onLeaveClass:string, navTa
             else {
                 const index = ViewElements.findIndex((view)=>view.id==entry.target.id);
                 if (index != -1) {
-                    NavElements[index].classList.remove(onEnterClass);
-                    NavElements[index].classList.add(onLeaveClass);
+                    if (NavElements[index].classList.contains(onEnterClass)) {
+                        NavElements[index].classList.remove(onEnterClass);
+                        NavElements[index].classList.add(onLeaveClass);
+                    }
                 }
             }
         }

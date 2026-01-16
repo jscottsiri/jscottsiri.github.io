@@ -864,20 +864,23 @@ section.page {
 
 @keyframes fade-to-left{
   from {
-
-    opacity: 1;
+  opacity: 1;
     transform: translateX(0%);
   }
   to{
     opacity: 0;
     transform: translateX(-100%);
-    visibility: hidden;
   }
 }
 
 .viewCard:hover{}
 
+.experience-menu-container{
+  opacity: 0;
+}
+
 .experience-menu-container.active{
+  visibility: visible;
   display: block;
   height: 100vh;
   width: 50px;
@@ -891,6 +894,7 @@ section.page {
   z-index: 101;
 }
 .experience-menu-container.inactive{
+  visibility: visible;
   height: 100vh;
   width: 50px;
   position: fixed;
