@@ -5,7 +5,7 @@ export function ScrollEffects() {
     const ObserverOptions = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.2,
+        threshold: 0.1,
     };
     // @ts-ignore
     const ObserverCallback = (entries:IntersectionObserverEntry[], observer:IntersectionObserver) => {

@@ -219,10 +219,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <p>During my time at Utrecht, I learned from experts from across Europe. Unlike many programs, I had a lot of flexibility in deciding which classes I took, letting me explore concepts like data science, adaptive systems, and rapid prototyping. Many of my courses were hands-on, often grouping me into groups with students from all over the world to solve problems. Additionally, I worked with data visualization at GraphPolaris during the summer and fall, getting development & UX experience in the Dutch startup scene.</p>
                                 <p>The end of my program had me working my thesis. I managed to find an industry position at TNO Defense, Safety, and Security- where I worked fulltime on my research. There, I got to work with an innovative group of Dutch researchers and professionals in the Human-Machine Teaming department. My thesis research, which was about how avatar fidelity impacts perceptions of prototyped 3D environments in virtual reality, helped inform design guidelines for high-impact design situations for the Dutch Navy. </p>
                             </div>
-                            <hr>
+                            <hr  class="vertical">
                             <div class="experience-aside">
                                 <p>Key Courses:</p>
-                                <p>
                                     <ul>
                                         <li>Adaptive Interactive Systems</li>
                                         <li>Interaction Technology Innovation</li>
@@ -233,7 +232,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                         <li>Quantitative Research Methods</li>
                                         <li>Qualitative Research Methods</li>
                                     </ul>
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -263,10 +261,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <p>While at NJIT, I found the Social Interaction Lab- run by Dr. Yvette Wohn. Working with her, I got involved in with research relating to livestreaming and social media, including livestreaming, virtual reality, and multiple account management. By the time I graduated, I had 3 peer reviewed publications at academic conferences and journals. The process let me learn a lot about how to study users and how they engage with technological systems.</p>
                                 <p>Also at NJIT, I found myself in many leadership positions. While a Sophomore and Junior, I was on the Executive Board for NJIT Game Club- helping manage weekly events and occasional tournaments. Not long after, I became a Resident Assistant and helped keep the campus running smoothly. Being an Resident Assistant taught me to keep calm under pressure and kept me engaged with my community- especially as COVID hit. During this time, I joined the NJIT Senate, first as the Human-Computer Interaction major representative and later the Ying Wu College of Computing's departmental representative.</p>
                             </div>
-                            <hr>
+                            <hr  class="vertical">
                             <div class="experience-aside">
                                 <p>Honors & Responsibilities:</p>
-                                <p>
                                     <ul>
                                         <li>Magna Cum Laude (3.82 GPA)</li>
                                         <li>Albert Dorman Honors Scholar</li>
@@ -274,10 +271,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                         <li>Resident Assistant</li>
                                         <li>NJIT Student Senator</li>
                                     </ul>
-                                </p>
                                 <hr>
                                 <p>Key Courses:</p>
-                                <p>
                                     <ul>
                                         <li>Advanced Website Development</li>
                                         <li>Advanced Web Applications</li>
@@ -287,7 +282,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                         <li>Foundations of Game Production</li>
                                         <li>Cyberpsychology</li>
                                     </ul>
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -318,10 +312,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <p>I played a key interpersonal role in the company. Within the company, I managed a small team of part-time contractors who helped with development. I held regular meetings with my team to track progress and unblock problems. Outside of the company, I frequently participated in sessions with clients to understand pain points, their needs and wants, and contribute technical information to the discussion. I frequently met with business partners, like payment processors and cybersecurity teams, to address updates and concerns. After launch, I acted as a contact point for users and managed bugs developed during the process.</p>
                                 <p>While SportsMainFrame was integrated into 25+ NJ towns, the platform was ultimately shut down in January of 2026. Despite this, the role was an incredible learning experience. I was the chief architect of the project, growing my developer skillset and my overall product skillset.</p>
                             </div>
-                            <hr>
+                            <hr  class="vertical">
                             <div class="experience-aside">
                                 <p>Stack Used:</p>
-                                <p>
                                     <ul class="tech-icon-list flex-row">
                                         <li><img src="/assets/icons/TechStack/HTML5.svg" width="32" height="32" class="tech-icon" alt="HTML5" /><div>HTML</div></li>
                                         <li><img src="/assets/icons/TechStack/CSS3.svg" width="32" height="32" class="tech-icon" alt="CSS3" /><div>CSS</div></li>
@@ -338,8 +331,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                         <li><img src="/assets/icons/TechStack/Docker.svg" width="32" height="32" class="tech-icon" alt="Docker" /><div>Docker</div></li>
                                         <li><img src="/assets/icons/TechStack/Figma.svg" width="32" height="32" class="tech-icon" alt="Figma" /><div>Figma</div></li>
                                     </ul>
-                                </p>
-
                             </div>
                         </div>
                     </div>
@@ -362,7 +353,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <p>Soesterberg, NL</p>
                             </div>
                         </div>
-                        <hr>
+                        <hr >
                         <div class="experience-content">
                             <div class="experience-description">
                                 <p>While doing my Thesis at Utrecht University, I managed to get a full-time, industry position with TNO's Human-Machine Teaming department. They were working on prototyping 3D workspaces with virtual reality so they could simulate efficiency before dedicating resources to construction. For my main project, I helped TNO identify how avatar fidelity impacted the perceptions of the environment. I worked with a high degree of autonomy, with periodic check-ins from my supervisors. In this project, I had to work on both development and research phases, both building out and running tests with the virtual world.</p>
@@ -371,10 +362,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <p>After the study, data collected was broken down and analyzed. Numerical data was analyzed through t-tests using the Python libraries NumPy and Pandas. While there was minimal difference with their initial paired t-tests, exploratory analyses with independent t-tests for each room set suggested that the initial avatar fidelity, rather than current avatar fidelity, led to significant differences in team dynamics and behaviors.</p>
                                 <p>The results of the study suggest that avatar fidelity can prime a user to interpret their environment differently. Avatar fidelity influenced perceptions of interactivity and stylization in the virtual environment. Initial avatar fidelity may set a baseline for observations of prototyped spaces and team dynamics. These factors imply that avatar fidelity may impact the focus brainstorming and evaluation of 3D workspace prototypes. The insights from the study helped inform design guidelines for virtual reality prototyping at TNO.</p>
                             </div>
-                            <hr>
+                            <hr class="vertical">
                             <div class="experience-aside">
                                 <p>Stack Used:</p>
-                                    <p>
                                         <ul class="tech-icon-list flex-row">
                                             <li><img src="/assets/icons/TechStack/CSharp.svg" width="32" height="32" class="tech-icon" alt="C#" /><div>C#</div></li>
                                             <li><img src="/assets/icons/TechStack/NET.svg" width="32" height="32" class="tech-icon" alt=".NET" /><div>.NET</div></li>
@@ -389,7 +379,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                             <li><img src="/assets/icons/TechStack/Git.svg" width="32" height="32" class="tech-icon" alt="Git" /><div>Git</div></li>
                                             <li><img src="/assets/icons/TechStack/GitLab.svg" width="32" height="32" class="tech-icon" alt="GitLab" /><div>GitLab</div></li>
                                         </ul> 
-                                    </p>
                             </div>
                         </div>
                     </div>
@@ -419,10 +408,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <p>I worked on a multinational AGILE team with developers and data analysts to visualize graph node data stored remotely. My multifaceted role meant that I wore many hats. I regularly worked with my peer developers to review and refine the available code, as well as provide design insights for features being built.</p>
                                 <p>One key feature I worked on was the application navigation system. The complexity of data visualization meant that accessing the right information at the right time was a primary user flow. I refined the navigation mechanisms on the dashboard, both designing and coding changes made. I additionally developed and tuned the database connection Splash Page. When users connected their remote database, we wanted to evoke key insights and options immediately when a user connected a database. This was done by showing summaries of the data supplied and the ways that graph nodes connected to each other.</p>
                             </div>
-                            <hr>
-                            <div class="experience-aside">
+                            <hr  class="vertical">
+                            <div class="experience-aside ">
                                 <p>Stack Used:</p>
-                                <p>
                                     <ul class="tech-icon-list flex-row">
                                         <li><img src="/assets/icons/TechStack/HTML5.svg" width="32" height="32" class="tech-icon" alt="HTML5" /><div>HTML</div></li>  
                                         <li><img src="/assets/icons/TechStack/CSS3.svg" width="32" height="32" class="tech-icon" alt="CSS3" /><div>CSS</div></li>  
@@ -439,7 +427,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                         <li><img src="/assets/icons/TechStack/Docker.svg" width="32" height="32" class="tech-icon" alt="Docker" /><div>Docker</div></li>
                                         <li><img src="/assets/icons/TechStack/Figma.svg" width="32" height="32" class="tech-icon" alt="Figma" /><div>Figma</div></li>
                                     </ul>
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -469,10 +456,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <p>On any given day, I could be working anywhere in the stack.  I regularly contributed to frontend development by building and modifying user interfaces, adding in new functionalities, and refactoring legacy code. Oftentimes, I worked back into the business logic of the platform, working with SQL databases, Redis Caches, and API Endpoints to pipe data through the platform.</p>
                                 <p>Whether building features, fixing bugs, or improving legacy code, I acted as a full member of the Aviato team. I worked with product managers and my peer developers while participating in Scrum ceremonies, Sprint Planning, and Reviews. I regularly took part in QA methods, peer-reviewing code and building out both unit and integration tests for the code I wrote. I stored and maintained code with CI/CD tools like Git, BitBucket, and Jira.</p>
                             </div>
-                            <hr>
-                            <div class="experience-aside">
+                            <hr class="vertical">
+                            <div class="experience-aside ">
                                 <p>Stack Used:</p>
-                                <p>
                                     <ul class="tech-icon-list flex-row">
                                         <li><img src="/assets/icons/TechStack/HTML5.svg" width="32" height="32" class="tech-icon" alt="HTML5" /><div>HTML</div></li>
                                         <li><img src="/assets/icons/TechStack/CSS3.svg" width="32" height="32" class="tech-icon" alt="CSS3" /><div>CSS</div></li>
@@ -485,7 +471,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                         <li><img src="/assets/icons/TechStack/Docker.svg" width="32" height="32" class="tech-icon" alt="Docker" /><div>Docker</div></li>
                                         <li><img src="/assets/icons/TechStack/Redis.svg" width="32" height="32" class="tech-icon" alt="Redis" /><div>Redis</div></li>
                                     </ul>
-                                </p>
                             </div>
                         </div>
                     </div>
