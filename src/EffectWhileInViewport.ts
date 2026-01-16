@@ -6,8 +6,8 @@ export function EffectWhileInViewport(targetClass:string,outputClass:string,afte
 
     const ObserverOptions = {
         root: null,
-        rootMargin: "0px",
-        threshold: 0.40,
+        rootMargin: "-50% 0px",
+        threshold: 0,
     }
     // @ts-ignore
     const ObserverCallback = (entries:IntersectionObserverEntry[], observer:IntersectionObserver) => {

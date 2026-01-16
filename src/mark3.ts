@@ -4,6 +4,7 @@ import {followMouse} from "./followMouse.ts";
 import {menuToggle} from "./menu-toggle.ts";
 import {ScrollEffects} from "./ScrollEffects.ts";
 import {EffectWhileInViewport} from "./EffectWhileInViewport.ts";
+import {NavMenuTargeting} from "./NavMenuTargeting.ts";
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div >
@@ -193,6 +194,18 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </section>
         <hr>
         <section id="experience" class="page">
+            <div id="experience-menu-nav" class="experience-menu-container">
+                <div class="experience-menu">
+                    <ul class="experience-menu-list">
+                        <li id="UU-Nav" class="experience-menu-item active"><a href="#Utrecht-University"><button class="experience-menu-button"><img alt="Utrecht University Icon" class="experience-menu-img" src="/assets/images/UtrechtUniversity.jpg"/></button></a></li>
+                        <li id="NJIT-Nav" class="experience-menu-item"><a href="#NJIT"><button class="experience-menu-button"><img alt="NJIT Icon" class="experience-menu-img" src="/assets/images/NJIT.jpg"/></button></a></li>
+                        <li id="SMF-Nav" class="experience-menu-item"><a href="#SportsMainFrame"><button class="experience-menu-button"><img alt="SportsMainFrame Icon" class="experience-menu-img" src="/assets/images/SportsMainFrame.jpg"/></button></a></li>
+                        <li id="TNO-Nav" class="experience-menu-item"><a href="#TNO"><button class="experience-menu-button"><img alt="TNO Icon" class="experience-menu-img" src="/assets/images/TNO.jpg"/></button></a></li>
+                        <li id="GP-Nav" class="experience-menu-item"><a href="#GraphPolaris"><button class="experience-menu-button"><img alt="GraphPolaris Icon" class="experience-menu-img" src="/assets/images/GraphPolaris.jpg"/></button></a></li>
+                        <li id="ADP-Nav" class="experience-menu-item"><a href="#ADP"><button class="experience-menu-button"><img alt="ADP Icon" class="experience-menu-img" src="/assets/images/ADP.jpg"/></button></a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="container">
                 <h2 class="animate-on-scroll">Experience</h2>
                 <div class="experience-container education animate-on-scroll"  id="Utrecht-University">
@@ -520,4 +533,5 @@ followMouse("container");
 menuToggle("mobile-nav-menu","nav-menu-toggle",["mobile-nav-button", "mobile-nav-cancel"])
 ScrollEffects();
 EffectWhileInViewport("experience-container","viewCard","unviewCard")
+NavMenuTargeting("active","inactive",[{viewElementID:"GraphPolaris",navElementID:"GP-Nav"},{viewElementID:"ADP",navElementID:"ADP-Nav"},{viewElementID:"TNO",navElementID:"TNO-Nav"},{viewElementID:"SportsMainFrame",navElementID:"SMF-Nav"},{viewElementID:"NJIT",navElementID:"NJIT-Nav"},{viewElementID:"Utrecht-University",navElementID:"UU-Nav"},{viewElementID:"experience",navElementID:"experience-menu-nav"}])
 // hoverTilt("Scott-Face",20,20);
